@@ -1,0 +1,23 @@
+# Experiment A (protocol B): Quality-Matched comparison (Section 13.3)
+# Baselines run with incentive_scale tuned so validation HQR is within
+# 1pt of PRIME's; compares cumulative payment / cost-per-HQ at matched
+# quality.  Baselines that could not reach the band are absent from
+# configs/tuned/quality_matched.yaml (see results/tuning/
+# quality_matched_report.json) and are reported as quality-infeasible.
+
+include:
+  - configs/tuned/same_budget.yaml       # base params
+  - configs/tuned/quality_matched.yaml   # incentive_scale overrides
+
+simulation:
+  T: 1000
+  log_level: "selected"
+  save_logs: [slot, provider]
+
+sweep:
+  methods: [PRIME, MOI, FR, DP, RAI, LDI]
+  seeds: 30
+  variations:
+    - name: stationary
+      overrides:
+        dataset: {pattern: stationary}

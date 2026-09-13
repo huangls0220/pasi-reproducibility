@@ -1,0 +1,12 @@
+{
+  "finished_utc": "2026-09-11T16:00:15.048950+00:00",
+  "completed": 174,
+  "expected": 174,
+  "errors": [],
+  "core_unchanged": true,
+  "inputs_unchanged": true,
+  "runner_unchanged": true,
+  "references_changed": false,
+  "population_confidence_intervals_computed": false,
+  "preregistration_sha256": "527bfb1ba16fc8f9328f1fba07f03aa900a20fc5a475b01962bcd36f30393bec"
+}

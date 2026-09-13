@@ -1,0 +1,9 @@
+# Experiment B: Long-term dynamics (Section 12.2)
+# ANALYSIS-ONLY: reuses the slot/provider logs of experiment `overall`
+# (variation stationary, T=1000, 30 seeds) — no additional runs needed.
+# make_figures.py --experiment long_term reads results/overall/.
+
+analysis_of: overall
+analysis_variation: stationary
+analysis_methods: [PRIME, MOI, LDI, FR, DP, RAI]
+rolling_window: 25

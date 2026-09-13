@@ -1,0 +1,29 @@
+# Experiment A: Overall performance (Section 12.1)
+# Same-Budget protocol is automatic (identical B^t per seed across methods).
+# Baseline parameters come from configs/tuned/same_budget.yaml (validation-
+# region tuning, §13.1); the Quality-Matched companion experiment is
+# configs/experiments/overall_quality_matched.yaml.
+# NOTE: results are SYNTHETIC — real Google/Alibaba traces not downloaded.
+
+include:
+  - configs/tuned/same_budget.yaml
+
+simulation:
+  T: 1000
+  log_level: "selected"
+
+sweep:
+  methods: [PRIME, MOI, FR, DP, RAI, LDI]
+  seeds: 30
+  variations:
+    - name: stationary
+      overrides:
+        dataset: {pattern: stationary}
+    - name: burst
+      overrides:
+        dataset: {pattern: burst}
+        simulation: {save_logs: [slot, provider]}
+    - name: dynamic
+      overrides:
+        dataset: {pattern: dynamic}
+        simulation: {save_logs: [slot, provider]}

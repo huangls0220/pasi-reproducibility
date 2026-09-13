@@ -1,0 +1,23 @@
+# Google ClusterData2019 trace (Trace A) — Section 8
+# NOT DOWNLOADED by default.  See README "Real trace preparation":
+#   1. Install: pip install google-cloud-bigquery  (or use the public GCS files)
+#   2. Download instance_events + machine_events for ONE cell, 2–4 consecutive
+#      days, from https://github.com/google/cluster-data (ClusterData2019).
+#   3. Place raw CSV/JSON files under data/raw/google/.
+#   4. Run: python scripts/preprocess_google.py --raw data/raw/google --out data/processed/google
+# Results from this adapter must be labelled "trace-driven simulation".
+
+dataset:
+  name: google
+  processed_dir: data/processed/google
+  slot_seconds: 300          # 5-minute slots
+  max_slots: 1000
+  duration_clip_quantiles: [0.01, 0.99]
+  L_norm_quantiles: [0.05, 0.95]   # P5/P95 robust normalization
+  L_range: [0.1, 1.0]
+  deadline_rho: [1.2, 2.5]
+  min_quality: [0.65, 0.85]
+  q_bar: [0.90, 1.00]
+  kappa_0: 2.5
+  kappa_clip: [1.0, 5.0]
+  value_coef: {v0: 1.0, v1: 3.0, v2: 1.0}

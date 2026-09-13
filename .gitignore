@@ -1,0 +1,11 @@
+__pycache__/
+.venv/
+.pytest_cache/
+*.pyc
+*.parquet
+*.plt
+raw/
+restricted/
+processed/
+episodes/
+*.zip

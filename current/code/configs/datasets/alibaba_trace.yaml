@@ -1,0 +1,23 @@
+# Alibaba cluster-trace-v2018 (Trace B) — Section 8
+# NOT DOWNLOADED by default.  See README "Real trace preparation":
+#   1. Download batch_task.csv (+ machine_meta.csv) from
+#      https://github.com/alibaba/clusterdata (cluster-trace-v2018).
+#   2. Place raw files under data/raw/alibaba/.
+#   3. Run: python scripts/preprocess_alibaba.py --raw data/raw/alibaba --out data/processed/alibaba
+# Recommended subset: 1–2 consecutive days, 500–1500 machines.
+
+dataset:
+  name: alibaba
+  processed_dir: data/processed/alibaba
+  slot_seconds: 300
+  max_slots: 1000
+  machine_subset: 1000
+  duration_clip_quantiles: [0.01, 0.99]
+  L_norm_quantiles: [0.05, 0.95]
+  L_range: [0.1, 1.0]
+  deadline_rho: [1.2, 2.5]
+  min_quality: [0.65, 0.85]
+  q_bar: [0.90, 1.00]
+  kappa_0: 2.5
+  kappa_clip: [1.0, 5.0]
+  value_coef: {v0: 1.0, v1: 3.0, v2: 1.0}

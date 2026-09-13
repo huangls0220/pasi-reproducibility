@@ -1,0 +1,32 @@
+[project]
+name = "prime-experiments"
+version = "0.1.0"
+description = "PRIME: Path-Dependent Reinforcement Incentives for Maintaining Long-Term Execution Quality in Computing Resource-Sharing Networks"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "pandas>=2.0.0",
+    "pyyaml>=6.0",
+    "matplotlib>=3.7.0",
+    "networkx>=3.1",
+    "pydantic>=2.0.0",
+    "pyarrow>=12.0.0",
+    "statsmodels>=0.14.0",
+    "scikit-learn>=1.3.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+milp = [
+    "pulp>=2.7.0",
+    "ortools>=9.6.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

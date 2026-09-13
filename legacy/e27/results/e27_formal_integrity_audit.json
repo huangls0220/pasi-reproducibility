@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": {
+    "complete_matrix": true,
+    "unique_rows": true,
+    "all_comparable_sets_nonempty": true,
+    "candidate_competition_present": true,
+    "task_partition_exact": true,
+    "qim_support_respected": true,
+    "all_ir_checks_pass": true,
+    "all_qos_checks_pass": true,
+    "finite_metrics": true,
+    "qim_csopt_winners_equivalent": true,
+    "qim_csopt_payments_equivalent": true,
+    "summary_has_expected_workloads": true,
+    "metadata_discloses_direct_bids": true,
+    "metadata_discloses_contract_difference": true,
+    "no_raw_trace_files": true
+  },
+  "rows": 90,
+  "expected_rows": 90,
+  "pasi_lower_than_qim_total": 0,
+  "pasi_lower_than_csopt_total": 0
+}

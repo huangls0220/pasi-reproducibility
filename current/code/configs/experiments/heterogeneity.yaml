@@ -1,0 +1,42 @@
+# Experiment E: Behavioural heterogeneity (Section 12.5)
+# Key check: at rho_B = 0 PRIME must stay close to MOI (no collapse).
+
+simulation:
+  T: 500
+  log_level: "selected"
+  save_logs: [slot]
+
+sweep:
+  methods: [PRIME, MOI]
+  seeds: 20
+  variations:
+    - name: rhoB_0.0
+      overrides: {providers: {behavioral_fraction: 0.0}}
+    - name: rhoB_0.2
+      overrides: {providers: {behavioral_fraction: 0.2}}
+    - name: rhoB_0.4
+      overrides: {providers: {behavioral_fraction: 0.4}}
+    - name: rhoB_0.6
+      overrides: {providers: {behavioral_fraction: 0.6}}
+    - name: rhoB_0.8
+      overrides: {providers: {behavioral_fraction: 0.8}}
+    - name: rhoB_1.0
+      overrides: {providers: {behavioral_fraction: 1.0}}
+    - name: omega_x0.5
+      overrides: {providers: {omega: [0.025, 0.125]}}
+    - name: omega_x1.5
+      overrides: {providers: {omega: [0.075, 0.375]}}
+    - name: omega_x2.0
+      overrides: {providers: {omega: [0.10, 0.50]}}
+    - name: xi_low
+      overrides: {providers: {xi: [0.03, 0.06]}}
+    - name: xi_high
+      overrides: {providers: {xi: [0.10, 0.16]}}
+    - name: delta_low
+      overrides: {providers: {delta: [0.005, 0.02]}}
+    - name: delta_high
+      overrides: {providers: {delta: [0.04, 0.08]}}
+    - name: zeta_strong
+      overrides: {providers: {zeta: [0.50, 0.70]}}
+    - name: zeta_weak
+      overrides: {providers: {zeta: [0.85, 1.00]}}

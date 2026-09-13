@@ -1,0 +1,35 @@
+# Experiment I: Scale & optimality gap (Section 12.9)
+# Runtime decomposition per slot (feasibility+contract, matching, total)
+# is in the slot logs.  Small sizes verify LB <= exact MILP OPT <= UB
+# inside the simulator (matching.milp_verify).
+
+simulation:
+  T: 100
+  log_level: "selected"
+  save_logs: [slot]
+
+sweep:
+  methods: [PRIME]
+  seeds: 5
+  variations:
+    - name: N20_M20
+      overrides:
+        providers: {N_mean: 20}
+        tasks: {M_mean: 20}
+        matching: {milp_verify: true, milp_max_pairs: 450}
+    - name: N50_M50
+      overrides:
+        providers: {N_mean: 50}
+        tasks: {M_mean: 50}
+    - name: N100_M100
+      overrides:
+        providers: {N_mean: 100}
+        tasks: {M_mean: 100}
+    - name: N200_M150
+      overrides:
+        providers: {N_mean: 200}
+        tasks: {M_mean: 150}
+    - name: N500_M300
+      overrides:
+        providers: {N_mean: 500}
+        tasks: {M_mean: 300}

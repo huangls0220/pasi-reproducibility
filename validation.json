@@ -1,0 +1,620 @@
+{
+  "utc": "2026-09-13T10:55:56.321426+00:00",
+  "core_tests_passed": 237,
+  "raw_reconstruction_file_checks": [
+    {
+      "seed": 1,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 1,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 1,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 1,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 2,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 2,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 2,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 2,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 3,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 3,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 3,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 3,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 4,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 4,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 4,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 4,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 5,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 5,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 5,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 5,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 6,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 6,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 6,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 6,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 7,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 7,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 7,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 7,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 8,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 8,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 8,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 8,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 9,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 9,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 9,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 9,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 10,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 10,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 10,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 10,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 11,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 11,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 11,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 11,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 12,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 12,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 12,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 12,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 13,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 13,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 13,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 13,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 14,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 14,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 14,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 14,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 15,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 15,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 15,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 15,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 16,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 16,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 16,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 16,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 17,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 17,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 17,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 17,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 18,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 18,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 18,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 18,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 19,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 19,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 19,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 19,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 20,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 20,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 20,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 20,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 21,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 21,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 21,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 21,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 22,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 22,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 22,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 22,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 23,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 23,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 23,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 23,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 24,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 24,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 24,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 24,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 25,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 25,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 25,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 25,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 26,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 26,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 26,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 26,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 27,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 27,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 27,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 27,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 28,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 28,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 28,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 28,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 29,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 29,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 29,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 29,
+      "file": "meta.json",
+      "pass": true
+    },
+    {
+      "seed": 30,
+      "file": "tasks.parquet",
+      "pass": true
+    },
+    {
+      "seed": 30,
+      "file": "providers.parquet",
+      "pass": true
+    },
+    {
+      "seed": 30,
+      "file": "provider_static.parquet",
+      "pass": true
+    },
+    {
+      "seed": 30,
+      "file": "meta.json",
+      "pass": true
+    }
+  ],
+  "E27_frozen_source_checks": {
+    "runner": true,
+    "simulator": true,
+    "pair_eval": true,
+    "qim_e": true,
+    "csopt": true
+  },
+  "current_core_byte_identity": true,
+  "new_formal_experiments": 0,
+  "portable_outcome_replay_validated": false,
+  "publicly_uploaded": false,
+  "license_approved": false,
+  "covers_all_manuscript_experiments": false,
+  "references_changed": false
+}

@@ -1,0 +1,25 @@
+# Phase 2: MOI-SAMI-PRIME decomposition experiment
+# Same-Budget protocol (identical B^t per seed across methods).
+# Inherits from overall.yaml; replaces sweep methods with only MOI/SAMI/PRIME.
+
+include:
+  - configs/tuned/same_budget.yaml
+
+simulation:
+  T: 1000
+  log_level: "selected"
+  save_logs: [slot, provider]
+
+sweep:
+  methods: [MOI, SAMI, PRIME]
+  seeds: 30
+  variations:
+    - name: stationary
+      overrides:
+        dataset: {pattern: stationary}
+    - name: burst
+      overrides:
+        dataset: {pattern: burst}
+    - name: dynamic
+      overrides:
+        dataset: {pattern: dynamic}
