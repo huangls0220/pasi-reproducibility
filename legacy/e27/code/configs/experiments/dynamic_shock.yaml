@@ -1,0 +1,36 @@
+# Experiment G: Dynamic shocks (Section 12.7)
+# T=600: pre-shock 0–299, shock 300–349, recovery 350–599.
+# Recovery time = slots until metric returns to 95% of pre-shock
+# 100-slot mean (computed in analysis).
+
+simulation:
+  T: 600
+  log_level: "selected"
+  save_logs: [slot]
+
+sweep:
+  methods: [PRIME, MOI, LDI]
+  seeds: 20
+  variations:
+    - name: no_shock
+      overrides: {}
+    - name: cost_shock
+      overrides:
+        shocks:
+          - {type: cost_shock, start: 300, end: 350, magnitude: 0.5, fraction: 0.5}
+    - name: workload_burst
+      overrides:
+        shocks:
+          - {type: workload_burst, start: 300, end: 350, magnitude: 0.8}
+    - name: provider_churn
+      overrides:
+        shocks:
+          - {type: provider_churn, start: 300, end: 350, magnitude: 0.05}
+    - name: behavior_decay
+      overrides:
+        shocks:
+          - {type: behavior_decay, start: 300, end: 350, magnitude: 0.5, fraction: 1.0}
+    - name: comm_degradation
+      overrides:
+        shocks:
+          - {type: comm_degradation, start: 300, end: 350, magnitude: 0.5}

@@ -1,0 +1,62 @@
+# Experiment F: Behaviour-parameter estimation error (Section 12.6)
+# The platform's design-side estimates of omega/zeta/xi/delta are perturbed;
+# true provider behaviour is unchanged.  PRIME-R = robust conservative design.
+# IR violations are EXPECTED here and reported as a metric, not a failure.
+
+simulation:
+  T: 500
+  log_level: "selected"
+  save_logs: [slot]
+
+sweep:
+  methods: [PRIME, PRIME-R]
+  seeds: 20
+  variations:
+    - name: err_0.0
+      overrides: {estimation_error: {level: 0.0}}
+    - name: omega_0.1
+      overrides: {estimation_error: {level: 0.1, params: omega, mode: random}}
+    - name: omega_0.2
+      overrides: {estimation_error: {level: 0.2, params: omega, mode: random}}
+    - name: omega_0.3
+      overrides: {estimation_error: {level: 0.3, params: omega, mode: random}}
+    - name: omega_0.4
+      overrides: {estimation_error: {level: 0.4, params: omega, mode: random}}
+    - name: omega_0.5
+      overrides: {estimation_error: {level: 0.5, params: omega, mode: random}}
+    - name: zeta_0.1
+      overrides: {estimation_error: {level: 0.1, params: zeta, mode: random}}
+    - name: zeta_0.3
+      overrides: {estimation_error: {level: 0.3, params: zeta, mode: random}}
+    - name: zeta_0.5
+      overrides: {estimation_error: {level: 0.5, params: zeta, mode: random}}
+    - name: xi_0.1
+      overrides: {estimation_error: {level: 0.1, params: xi, mode: random}}
+    - name: xi_0.3
+      overrides: {estimation_error: {level: 0.3, params: xi, mode: random}}
+    - name: xi_0.5
+      overrides: {estimation_error: {level: 0.5, params: xi, mode: random}}
+    - name: delta_0.1
+      overrides: {estimation_error: {level: 0.1, params: delta, mode: random}}
+    - name: delta_0.3
+      overrides: {estimation_error: {level: 0.3, params: delta, mode: random}}
+    - name: delta_0.5
+      overrides: {estimation_error: {level: 0.5, params: delta, mode: random}}
+    - name: all_0.1
+      overrides: {estimation_error: {level: 0.1, params: all, mode: random}}
+    - name: all_0.2
+      overrides: {estimation_error: {level: 0.2, params: all, mode: random}}
+    - name: all_0.3
+      overrides: {estimation_error: {level: 0.3, params: all, mode: random}}
+    - name: all_0.4
+      overrides: {estimation_error: {level: 0.4, params: all, mode: random}}
+    - name: all_0.5
+      overrides: {estimation_error: {level: 0.5, params: all, mode: random}}
+    - name: omega_over_0.2
+      overrides: {estimation_error: {level: 0.2, params: omega, mode: over}}
+    - name: omega_over_0.4
+      overrides: {estimation_error: {level: 0.4, params: omega, mode: over}}
+    - name: omega_under_0.2
+      overrides: {estimation_error: {level: 0.2, params: omega, mode: under}}
+    - name: omega_under_0.4
+      overrides: {estimation_error: {level: 0.4, params: omega, mode: under}}

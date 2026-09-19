@@ -1,0 +1,19 @@
+baselines:
+  dynamic_pricing:
+    incentive_scale: 0.75
+    p: 0.2
+  fixed_reward:
+    D: 5.0
+    base_payment: 0.1
+    incentive_scale: 0.25
+    p: 0.6
+  linear_decay:
+    D: 3.0
+    decay_interactions: 40
+    incentive_scale: 0.75
+    p_end: 0.2
+    p_start: 0.8
+  reputation_aware:
+    ewma_alpha: 0.3
+    incentive_scale: 0.75
+    p: 0.2

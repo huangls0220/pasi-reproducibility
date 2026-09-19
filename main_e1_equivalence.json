@@ -1,0 +1,16 @@
+{
+  "comparison": "R72 Main-180 exact audit runner versus R72 E1 portable runner",
+  "paired_cells": 90,
+  "fields": [
+    "design_reserve_MOI",
+    "design_reserve_PASI",
+    "execution_settlement_MOI",
+    "execution_settlement_PASI",
+    "assigned_MOI",
+    "assigned_PASI"
+  ],
+  "max_absolute_numeric_difference": 1.4551915228366852e-11,
+  "max_absolute_assignment_difference": 0,
+  "interpretation": "The E1 runner regenerates the same 180 scenario-method-seed cells under the canonical core and adds phase diagnostics.",
+  "references_changed": false
+}

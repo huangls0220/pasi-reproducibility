@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.test-tmp/
+restricted/
+raw/
+cache/
+caches/
+episodes/
+cells/
+participant_logs/
+provider_logs/
+task_logs/
+slot_logs/

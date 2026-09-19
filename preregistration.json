@@ -1,0 +1,1458 @@
+{
+  "config_records": {
+    "burst": {
+      "archived_parsed_sha256": "9750ea2e1fea8ea9fc3665e79a745787876d626637390088f5fe505c08379fe6",
+      "config": {
+        "_meta": {
+          "frozen_at": "2026-07-22",
+          "scenario": "burst"
+        },
+        "contract": {
+          "D_bar": 10.0,
+          "p_max": 0.8,
+          "p_min": 0.05,
+          "reinforcement_margin": 0.05
+        },
+        "dataset": {
+          "pattern": "burst"
+        },
+        "matching": {
+          "budget_ratio": 0.7,
+          "budget_tol": 0.0001,
+          "initial_lambda_B": 0.1,
+          "max_iter": 100,
+          "objective": "coverage_first_payment_second",
+          "stagnation_limit": 5,
+          "step_scale": 0.1
+        },
+        "path_state": {
+          "K": 10,
+          "Theta_C": 0.55,
+          "Theta_M": 0.75,
+          "delta_p_max": 0.05,
+          "s_C": 0.65,
+          "s_M": 0.8
+        },
+        "prime": {
+          "eta_H": 5.0
+        },
+        "providers": {
+          "N_mean": 100,
+          "alpha": [
+            0.05,
+            0.2
+          ],
+          "behavioral_fraction": 0.7,
+          "beta": [
+            0.02,
+            0.1
+          ],
+          "delta": [
+            0.01,
+            0.05
+          ],
+          "initial_H": 0.1,
+          "max_processing_rate": [
+            5.0,
+            20.0
+          ],
+          "omega": [
+            0.05,
+            0.25
+          ],
+          "outside_option": 0.01,
+          "xi": [
+            0.05,
+            0.12
+          ],
+          "zeta": [
+            0.65,
+            0.95
+          ]
+        },
+        "simulation": {
+          "T": 1000,
+          "log_level": "summary",
+          "state_reset": {
+            "enabled": false
+          }
+        },
+        "tasks": {
+          "M_mean": 80,
+          "cpu_cycles": [
+            0.1,
+            1.0
+          ],
+          "deadline_factor": [
+            1.2,
+            2.5
+          ],
+          "input_size": [
+            0.1,
+            2.0
+          ],
+          "kappa": [
+            1.0,
+            5.0
+          ],
+          "min_quality": [
+            0.65,
+            0.85
+          ],
+          "output_size": [
+            0.05,
+            1.0
+          ],
+          "q_bar": [
+            0.9,
+            1.0
+          ],
+          "value_base": [
+            1.0,
+            5.0
+          ]
+        }
+      },
+      "effective_parsed_sha256": "5658f62d8d68d12523c176c482a61e3feb1caa16e76bfb2f09f45c0358bba0ba",
+      "member": "sealed_evidence/pasi_final_evidence/frozen_configs/legacy_burst_frozen.json",
+      "path": "C:\\Users\\huang\\Documents\\Codex\\2026-08-31\\new-chat\\work\\round72-canonical-protocol\\frozen_configs\\legacy_burst_frozen.json",
+      "raw_sha256": "797c291c0d2cdc9ae2eb2c5312f4241e1bd34db27ac03e0c101167fbe2f4f77c"
+    },
+    "dynamic": {
+      "archived_parsed_sha256": "65909f6897b62a1dbae4574ec8d15a2bfb1a9deca8feefed44805b2a2aff4647",
+      "config": {
+        "_meta": {
+          "frozen_at": "2026-07-22",
+          "scenario": "dynamic"
+        },
+        "contract": {
+          "D_bar": 10.0,
+          "p_max": 0.8,
+          "p_min": 0.05,
+          "reinforcement_margin": 0.05
+        },
+        "dataset": {
+          "pattern": "dynamic"
+        },
+        "matching": {
+          "budget_ratio": 0.7,
+          "budget_tol": 0.0001,
+          "initial_lambda_B": 0.1,
+          "max_iter": 100,
+          "objective": "coverage_first_payment_second",
+          "stagnation_limit": 5,
+          "step_scale": 0.1
+        },
+        "path_state": {
+          "K": 10,
+          "Theta_C": 0.55,
+          "Theta_M": 0.75,
+          "delta_p_max": 0.05,
+          "s_C": 0.65,
+          "s_M": 0.8
+        },
+        "prime": {
+          "eta_H": 5.0
+        },
+        "providers": {
+          "N_mean": 100,
+          "alpha": [
+            0.05,
+            0.2
+          ],
+          "behavioral_fraction": 0.7,
+          "beta": [
+            0.02,
+            0.1
+          ],
+          "delta": [
+            0.01,
+            0.05
+          ],
+          "initial_H": 0.1,
+          "max_processing_rate": [
+            5.0,
+            20.0
+          ],
+          "omega": [
+            0.05,
+            0.25
+          ],
+          "outside_option": 0.01,
+          "xi": [
+            0.05,
+            0.12
+          ],
+          "zeta": [
+            0.65,
+            0.95
+          ]
+        },
+        "simulation": {
+          "T": 1000,
+          "log_level": "summary",
+          "state_reset": {
+            "enabled": false
+          }
+        },
+        "tasks": {
+          "M_mean": 80,
+          "cpu_cycles": [
+            0.1,
+            1.0
+          ],
+          "deadline_factor": [
+            1.2,
+            2.5
+          ],
+          "input_size": [
+            0.1,
+            2.0
+          ],
+          "kappa": [
+            1.0,
+            5.0
+          ],
+          "min_quality": [
+            0.65,
+            0.85
+          ],
+          "output_size": [
+            0.05,
+            1.0
+          ],
+          "q_bar": [
+            0.9,
+            1.0
+          ],
+          "value_base": [
+            1.0,
+            5.0
+          ]
+        }
+      },
+      "effective_parsed_sha256": "667750648dca6fb2290db29123869abc67d0887afcf7bd447608d9c92f0bd41a",
+      "member": "sealed_evidence/pasi_final_evidence/frozen_configs/legacy_dynamic_frozen.json",
+      "path": "C:\\Users\\huang\\Documents\\Codex\\2026-08-31\\new-chat\\work\\round72-canonical-protocol\\frozen_configs\\legacy_dynamic_frozen.json",
+      "raw_sha256": "d3316c3b0ff79351054abc4201efef7ea863d07a183d246725c46aca58f7747b"
+    },
+    "stationary": {
+      "archived_parsed_sha256": "6858d12ae9cd99c3c03691b5026651a32178a83ec17df6ac7e92054f94f7d938",
+      "config": {
+        "_meta": {
+          "frozen_at": "2026-07-22",
+          "scenario": "stationary"
+        },
+        "contract": {
+          "D_bar": 10.0,
+          "p_max": 0.8,
+          "p_min": 0.05,
+          "reinforcement_margin": 0.05
+        },
+        "dataset": {
+          "pattern": "stationary"
+        },
+        "matching": {
+          "budget_ratio": 0.7,
+          "budget_tol": 0.0001,
+          "initial_lambda_B": 0.1,
+          "max_iter": 100,
+          "objective": "coverage_first_payment_second",
+          "stagnation_limit": 5,
+          "step_scale": 0.1
+        },
+        "path_state": {
+          "K": 10,
+          "Theta_C": 0.55,
+          "Theta_M": 0.75,
+          "delta_p_max": 0.05,
+          "s_C": 0.65,
+          "s_M": 0.8
+        },
+        "prime": {
+          "eta_H": 5.0
+        },
+        "providers": {
+          "N_mean": 100,
+          "alpha": [
+            0.05,
+            0.2
+          ],
+          "behavioral_fraction": 0.7,
+          "beta": [
+            0.02,
+            0.1
+          ],
+          "delta": [
+            0.01,
+            0.05
+          ],
+          "initial_H": 0.1,
+          "max_processing_rate": [
+            5.0,
+            20.0
+          ],
+          "omega": [
+            0.05,
+            0.25
+          ],
+          "outside_option": 0.01,
+          "xi": [
+            0.05,
+            0.12
+          ],
+          "zeta": [
+            0.65,
+            0.95
+          ]
+        },
+        "simulation": {
+          "T": 1000,
+          "log_level": "summary",
+          "state_reset": {
+            "enabled": false
+          }
+        },
+        "tasks": {
+          "M_mean": 80,
+          "cpu_cycles": [
+            0.1,
+            1.0
+          ],
+          "deadline_factor": [
+            1.2,
+            2.5
+          ],
+          "input_size": [
+            0.1,
+            2.0
+          ],
+          "kappa": [
+            1.0,
+            5.0
+          ],
+          "min_quality": [
+            0.65,
+            0.85
+          ],
+          "output_size": [
+            0.05,
+            1.0
+          ],
+          "q_bar": [
+            0.9,
+            1.0
+          ],
+          "value_base": [
+            1.0,
+            5.0
+          ]
+        }
+      },
+      "effective_parsed_sha256": "f2484237f8f46d7f1a1dbf6b9c06454d886cb9f1c685dcef9cea664767daf4f2",
+      "member": "sealed_evidence/pasi_final_evidence/frozen_configs/legacy_stationary_frozen.json",
+      "path": "C:\\Users\\huang\\Documents\\Codex\\2026-08-31\\new-chat\\work\\round72-canonical-protocol\\frozen_configs\\legacy_stationary_frozen.json",
+      "raw_sha256": "f990ddf23a42ed30241611197fc04054c6249c0c1298f7d76df954e49aa6a763"
+    }
+  },
+  "created_utc": "2026-09-17T00:52:54.656325+00:00",
+  "current_core_hashes": {
+    ".pytest_cache/.gitignore": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd",
+    ".pytest_cache/CACHEDIR.TAG": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4",
+    ".pytest_cache/README.md": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad",
+    ".pytest_cache/v/cache/nodeids": "9a31c13a1254e87294c734f8b9032dd4db85ad732ce1988cc81583a56b198c92",
+    "configs/datasets/alibaba_trace.yaml": "974a53b1048f32b68912b515b198804b5ce2dd33cc603e22a7e4e3baf2c1c38e",
+    "configs/datasets/google_trace.yaml": "d03516be8a088bda71e191f2e808e62c29dcf78bcc4d2f8e40003bf9460ce812",
+    "configs/datasets/synthetic.yaml": "c2d980f7990ee996e2abcfa496aba44dcabbcb3df21b4540f8ac41372746f809",
+    "configs/default.yaml": "d26fe34fbaa59a70019b02560c6f57e491dce5a2c5350af257782222e140db43",
+    "configs/experiments/ablation.yaml": "03085cc387e4d0f5b94a81f2bd6d097a32c2f2e6508d4d994adfab9373b7b63b",
+    "configs/experiments/break_even.yaml": "7f56461dc7b3016e88e62d2ee83922d398bbfff580cbfc9e88941d9aad5f4d4a",
+    "configs/experiments/correctness.yaml": "3faca25fc7dc9e4af6520d451e6354c90293fae47339f61a59fad22e6ff7aa61",
+    "configs/experiments/dynamic_shock.yaml": "ecb8294ced642a6a385bece471e2038c6c48929618822e9105359890eb2ce48c",
+    "configs/experiments/heterogeneity.yaml": "0ec45c529b6ec915bd9eef7fc4102cba7851e6d4510ab65b736a7024b48ab99d",
+    "configs/experiments/long_term.yaml": "7f1764f7b2df95667519b59b9a7fffad643d6c89a3b841842cd27e0155bc92df",
+    "configs/experiments/overall.yaml": "e87966bda774699365b9d244393a08fe8bb07fbf789608a4613c8689ee8add0d",
+    "configs/experiments/overall_quality_matched.yaml": "ef1e08541fe3f923cbd8e75109f97c8143811f62c1b35b29ed102724da37d002",
+    "configs/experiments/parameter_error.yaml": "814322a241ef420a9d0212f584bf92b860b0facbcca4d486f32217ad299fceef",
+    "configs/experiments/phase2.yaml": "91706d367f54a4e4cb3f3a487e722c41fe14eaaf355f5fd74d6902fc98398f0c",
+    "configs/experiments/scalability.yaml": "953a8e9ff8b86fba60c193bceb186cb6eb467dfe498973913d5d20d9de482156",
+    "configs/experiments/sensitivity.yaml": "897cb0358bd032eeffbbde3ffaae8d43f65fdcf050ec9d6704a8734a8e21573f",
+    "configs/tuned/quality_matched.yaml": "703de837f4789dd7324269dac646fbbce9455aac30e9d1f728193e59a602b994",
+    "configs/tuned/same_budget.yaml": "c874329e0036d0791e0c33aa216ce4f3c9c508710d557fe085b9b931ce7acd0f",
+    "pyproject.toml": "066465b7f7650484d50e3d1736640143f6a5f2422e14c26ab86a9ce5a2b0bc97",
+    "requirements-lock.txt": "1504425d8e092fd9b75090d815205cc21830240daec3dcd73bcc0b36eb2b020c",
+    "requirements-win-py314-lock.txt": "9f93aa038d8d19b092a54365b30a26383962849a5f6cdee99bcc430530e8672e",
+    "requirements.txt": "e7adffab4245b5b9c4060a429433aeea6cf2d0563bac2b81756e09ad29cc482d",
+    "scripts/aggregate_results.py": "0a0b06421eb2da9d4bf8aa236687389f1a197ed17cab23c03e8e31499bf38c25",
+    "scripts/audit_e27_public_payment_baselines.py": "0e2e8b5de447c76785b7289616ff7be5abe766decead16ba14652ef4e5d96736",
+    "scripts/audit_e28_evidence_origin.py": "fac721c5ee78ac50c364abeb177a46511c29cf910bda291fd84c564a38c31975",
+    "scripts/audit_e29_calibration_selection.py": "0ca227d4a38847d934d10eaa850f293c39d38578fcd86acd4b946d1e60e0f7d7",
+    "scripts/audit_e5_geolife.py": "5153a7b2f015e43848636b5beaa21a32c6209db737c4a0b2b0a0bba8c7b0db29",
+    "scripts/audit_e8.py": "87c97c0a00c41bed5b1714d6b3212f09de25e098a5193993e58e3b7b95380fc0",
+    "scripts/audit_stage2a_no_manual_replay_formula.py": "ba951d8bae62916e7ac9c1d8a262f90f97049113f2ceef484408ac4d3c03aa6a",
+    "scripts/build_manifest.py": "e9097d65b0e6e1fa2f64c436f268270f0aab1848ae0c401dee2baa70b41ca134",
+    "scripts/calibrate_parameters.py": "39613e2b6e887f5a821640a80a24c9b5f0ebb7be159fcd47f2bbe128958f5c95",
+    "scripts/fast_a1_4b_finalize.py": "8e8d290d0d4d74f54a8e14bb36a1654b6ea023bd918b97a919deb0bc5e27d7e4",
+    "scripts/finalize_a1_4a.py": "0b3feff2222cd27fd87b7cd6c3d4f63a5e8d76f812972a308d5bc6f780f1bc3e",
+    "scripts/finish_a1_5.py": "af311900a41f1183d7c2fe3b6ecc89cd43bff790c96d29f9ea57311e122ba4f4",
+    "scripts/generate_stage2bvr_docx.py": "215a4f8cd57b8391fe89cfa48eaa11f16a1d56482e18025cde6b2381bfb858d5",
+    "scripts/make_e29_safety_coverage_frontier.py": "a1925f79d061c01cf1e22e32265443b06c85a24be8f8b611a76110232ec17136",
+    "scripts/make_e8_figures.py": "daa2d9d81d3fe922eee7dacc135a0fbd7e9b2ad55fb1e26b68ffae0382a461ea",
+    "scripts/make_figures.py": "bedbc72bda68538e633593dbb66fac5fa858faf57fefccef9d059103b903aefd",
+    "scripts/preprocess_alibaba.py": "64757633d529d70edb4db4f1a7a0a9c0ecac1daa7f2670be4b8e3f8d4fb2b6a4",
+    "scripts/preprocess_geolife.py": "91e6f3cd93c9caa1d79ff8bfaa03e70075ba1106d143efd54c5a03781117d143",
+    "scripts/preprocess_google.py": "9c623ac6d3364fb9d06f83d9ca50c7c03fe1ab48d9a95f327a428df8826028e2",
+    "scripts/run_a1_3_complete.py": "146bd1a3af997978ae17969dcc81706414fc243bf794a52d7c4c20a5c93447cc",
+    "scripts/run_a1_4_scale.py": "5019a902cc2395c2e7c1b0269072811e526f95d4a6c8ed028779b660b1eb2756",
+    "scripts/run_a1_4a_four_world.py": "7be4d3486de9b8bf6b777a8c09b19beb84aa3a90e62e9dc27759423d48f4d931",
+    "scripts/run_a1_4b_complete.py": "8ca73183dc54a8d07ba5b09d37c93889f10780ec241a32d32539049045c00f12",
+    "scripts/run_a1_5.py": "c56ad391d29a5082fead43c7bb02d6ab90da7ea41fabebff60a29b804d0acf8c",
+    "scripts/run_a1_6_stage1.py": "0e2bf2963933ab6dd701f42401efa5f70f74d30cefe70d1829138dde464f14d6",
+    "scripts/run_a1_6_stage1b.py": "050dbe377696622338fad87e9be2fd65588e42d33f6bf01899b09491df441e0b",
+    "scripts/run_a1_6_stage1c.py": "16eb29fdefaeae90d88a3e248d05fa2e62050aca6dcf659bf8fc8b8170cfeb45",
+    "scripts/run_a1_7_stage2a.py": "0ca4f5e32c539ccd53cf3b380ee4f4a61156030ab3a4f2d3215abc1fbd7c14d0",
+    "scripts/run_a1_7_stage2ar.py": "a3d88c09f54d72f35f0344c3a2e0baf89458f485aee5656ac0e7ce3b0fb88764",
+    "scripts/run_a1_8_stage2bvr.py": "8ce7b05d5de6a1a27e8f561cfb021ef1330aaff813f3e826630e29226358a408",
+    "scripts/run_batch.py": "bf08c4c3f936927d3731e6802b08782533df5bd544523982c17c67bffe04886c",
+    "scripts/run_cumulative_bridge.py": "9e958656298f38b68ed3ee41b0230b8a383c33bc270a83366f6119a4771448e6",
+    "scripts/run_e11_pasi_u.py": "6af96617f063bf1a504756e84103282ee4c549a2ce46a87d755dd0f85d3b8997",
+    "scripts/run_e13_response_reserve.py": "0b37cf587cb3b1d51ee15b965169c6e6ad4f8f9cf9ed8d4fb952f8b1b6e56d75",
+    "scripts/run_e15_directional_response.py": "dadc3d6629d147d34031b86940cdc62f0fc949163365576527ce7191ccbe473c",
+    "scripts/run_e16_quac_baseline.py": "359ba576ab587f14bee9fc57a6448047a2b6947c76db3c76b04bf5d541cebecb",
+    "scripts/run_e17_response_drift.py": "71df1764b4d5217944b50f8b03258dc094bcc3704a6086535120b872fcdb6f85",
+    "scripts/run_e18_tiles_economic_anchor.py": "89614b3854bae4989ead2a4bed82ef706648957c33e6fdaa7f7671194f778aa2",
+    "scripts/run_e19_probability_weighting.py": "ae06a0ec46bc55f3a3ce9c712548e8e75e9080c4eb6c700497e71da11818c545",
+    "scripts/run_e20_envelope_tradeoff.py": "b97bd8890ffd09bd283782418a9ebaf63721108b9b20387dc3f4cc14679ee15e",
+    "scripts/run_e21_public_and_adaptive.py": "f07706d40b878674a805f1f7229faffd6747f8b0eb8560c99eb8c6e754463a3c",
+    "scripts/run_e22_adaptive_geolife.py": "54142b9eb855b24a1c79202f2411ae393ee5d58ad144d50441a070609c50b375",
+    "scripts/run_e23_guardrail_frontier.py": "509eab3b9e9546fc563529c9005aa1217c9034c746f31ea35fe2dc8ca0a033e8",
+    "scripts/run_e24_robust_optimality_certificate.py": "bd01fd93ef59180a82c749afd05c45653da6fd84bf38a2adee4ca45ce16d2d21",
+    "scripts/run_e25_public_dynamics.py": "61632c6c33c7df56e0b00298f0bd05c1ef94b61a1cf3b8ec7b5943b63c1d9cc1",
+    "scripts/run_e26_public_breadth.py": "9292ee2435d48d5a228f2387dc971876173a2f971e6dc251dfd6f90c0c9cd2c2",
+    "scripts/run_e27_public_payment_baselines.py": "25f9c2d51460ebf895d4e08833935611ae0addaae84e8e9634af0e93031d8679",
+    "scripts/run_e29_calibration_selection.py": "f4498ca5c5e3ff158cb8d901bb794ad3e0da37f778b8025468affdebb78a11dc",
+    "scripts/run_e30_episode_risk.py": "67c4dc368284c3b02253aa96a248583570d28d1cdb46eeeefe928fd57bd07906",
+    "scripts/run_e5_geolife.py": "0ada036bdb9a5f8aee54427e85e8f3ab0467a71aa8f4230844408bfe13c56e10",
+    "scripts/run_e8_robustness.py": "27a2496a9d3c0fd80a69d71bb2053591a0fd878e1c2140b4498dd1b4296f6fc5",
+    "scripts/run_experiment.py": "606af412e6a7a8825734c0782317375bdd780c740e8baf7ab5c9e0ed82666d34",
+    "scripts/run_route_a_a1_2.py": "09847296d70120595f1625054c4d3a7daabcfe62311c861da1b6c8dcc76ec21d",
+    "scripts/run_route_a_a1_3.py": "ff3aeff169244d8bea1bc69545ce8b9a909b92c55277ac468faca97dc3671ead",
+    "scripts/run_route_a_experiments.py": "9018e8037d09eff1affa75b604fdf0286a18e32e8c1b6a359ebd62e1ce88ba5f",
+    "scripts/run_sfprime_b1_2.py": "4ae7916cc05ca547d94304e2eec7cbd6590616012159b8d5ddfe74308e0826e3",
+    "scripts/run_stage2_correct.py": "a8f41b44385348c14f057ee56b1e379afc5b44f49acfcfb6e1b6700e8af02f9c",
+    "scripts/run_sweep.py": "e1cac3865b7b061f58e1cff0f6313d0be50f1deb022534cd78ad49453947d050",
+    "scripts/statistical_tests.py": "dd5d10d8189e89d5e9eb46c1224f31ea85d564f879e1c98f8e41725833c52c2b",
+    "scripts/summarize_e13_paired.py": "fecbfa48be6e3385f56baa7af079738fa63701b3a85e08c97abbb3f979e0e94a",
+    "scripts/tune_baselines.py": "8b3ce48575c33967c4453e6413d3b535a334a3821e15aef6d23aa3e46adc25c5",
+    "scripts/validate_coverage_first_matching.py": "1af0ad602f39fa98c2f0b40eef4d4eea77a2ae23dd5378d4790e68e48607a8f8",
+    "scripts/validate_dataset.py": "6c790f607bd09c8f6e527d64b1fe5121de40c0473e96dae2e662b7e046e249fc",
+    "scripts/verify_a1_6_stage1.py": "2519cbafaf97eb265ebb4ba715264d3530f799c153499e2c276c226b2570a8f1",
+    "scripts/verify_a1_6_stage1b.py": "f5ccf3a9905c02d5294571868a4880fc5aeffa91fd571b9c0412c0c39e32dd0e",
+    "scripts/verify_a1_6_stage1c.py": "2b4fbba3feb2d6bfa3b5b94b2bf0eaf14fa7724fbb0d71e579d6984577cfd830",
+    "scripts/verify_e15_directional_response.py": "14c576e73b5af3d63b0e6785575341953ddd921b23bbeeecbdec9c29a2da92bf",
+    "scripts/verify_e16_quac_baseline.py": "f371858bef0ce62d45b4113ca4aa62682ad58eb5167371c10bc27fdde3a8b850",
+    "scripts/verify_e17_response_drift.py": "1d2ce1b18e4cbaa2f92d9039f75aa0610c8c05304b1679496c63957742ab237f",
+    "scripts/verify_e18_tiles_economic_anchor.py": "06fe5f6c240cd4af1e14295135a1551b0375b5e0be4ff0abd1ebadda79776b01",
+    "scripts/verify_e19_probability_weighting.py": "4c174c2b2ce7ddff096c27f0a2d215292f805e251d8b007e054ba4c53ca5c15e",
+    "scripts/verify_geolife_reconstruction.py": "54af0bbae86d0d60eec1d9ed62888260e73ed7a44ceb2dab09ae78eacd5285c1",
+    "scripts/verify_route_a_a1_7_stage2a.py": "dd0451f88977fd23327b8bcad49c412a62c58c1537ee59faf378870214d0bd54",
+    "scripts/verify_route_a_a1_7_stage2ar.py": "494a0646a1233b64239ca37181ae37b3fd1f3087a5d499960c607afbc5880940",
+    "scripts/verify_route_a_a1_8_stage2bvr.py": "c274039885bd03d21bebf2d362d646405124667127aa536aad306fb2fd7d1e15",
+    "src/__init__.py": "faf13f51792dd24e7e5bae09bede42a1537cc9a2f19e2cbc25fa27aecbc0fa64",
+    "src/baselines/__init__.py": "e1e50de22e6a2db7f0b39c582256702a91b64959394ac5f04c05b1eddace982e",
+    "src/baselines/csopt.py": "02df225bbdd9ce4da74bdafce99639e2b321608c6c3a930624819469ccceac0c",
+    "src/baselines/dynamic_pricing.py": "a70d5ac507d7c6c4284408d6b2d665956ddfdc62d54199e07a766fb9e51f7f38",
+    "src/baselines/fixed_reward.py": "a4b0c6601d9e1333b3b7d640ccc2276c7c73f77f33539dd51c120278730dc215",
+    "src/baselines/linear_decay.py": "9249017c93ca53e6a9d6f11d019ccd4537bac047b5543605c2bc25a946b5d399",
+    "src/baselines/myopic_optimal.py": "ddbe5d3db62e86f5474d094ee2914641bd98df72d4af83de871a6e86f1eeefd5",
+    "src/baselines/prime_variants.py": "83093d56d7450177b4ffc29185fde10fb55b7617528d453b8743bd3487828763",
+    "src/baselines/qim_e.py": "c332fb85f1f477e8c03eccdbdf166f02aff10906d99f28e09e171cb5edb9b4cd",
+    "src/baselines/quac_f.py": "041e4a89e24ae13346f34d8bb9d17a02695e93424935df672783173ffa953a76",
+    "src/baselines/reputation_aware.py": "51add9e40edaaccb075b6c06102189ecc4389e091ac534f56659f5926678c148",
+    "src/behavior.py": "967425ca7c44fac6939b7f9800cfccf35961842765e8ec29039db7f6b32b1389",
+    "src/contracts.py": "550aa1a8fa1d851bd55b133101dad5119169b145c26c5d9e34b45d716d0282e9",
+    "src/datasets/__init__.py": "0404c6c6afa1c7dd09ea32c7d8564f4ac876a156469adb9e497ce0ad3dfb8686",
+    "src/datasets/alibaba.py": "ea0071d54637519a4b180aa63c7a6222c10fa00695c0e5c22b202395562eb2c5",
+    "src/datasets/google.py": "97ce2be7784c63f31f2e17a75420deda8ecca5af3f9628c3bfa4665320f0d1ca",
+    "src/datasets/mobility.py": "5b53c8b05245a6e4ff2d754060c1ae5576a0c4c2fe272cc7f9719794058a698e",
+    "src/datasets/public_dynamics.py": "da7850d44df180c46e0df694ea4e38bb185a6d25f04d342403bf1a348f745d72",
+    "src/datasets/synthetic.py": "f5b120c6c9f53fa3ffd92a70b82379c4f8000537fe8c0994daf283522dbf47f9",
+    "src/datasets/trace_common.py": "a86bb68fca183d959d97e03df83966581254cdea613b6c956dfeb950182ed6d9",
+    "src/datasets/trace_loader.py": "16821c0217076489294f8433f63719f0736738aeab1ee8a0dc80412784173fa6",
+    "src/effort_solver.py": "7689871068c34feaec1777c1315441bf450551b1294839f96129724bc4a79964",
+    "src/environment_events.py": "21aa2e7d18beb300d95257afa1a1da26e607a8ddbc61129570b0504f21f18fa1",
+    "src/experiment_protocol.py": "1ac15749f9963f937c836f03ad0b334bd967d32444c65a06fc50c8dbd602b274",
+    "src/io_utils.py": "431f89ef8100a2fa11e46cf95019514dd3036e35ce9a829b8f51788fb70dfe35",
+    "src/matching.py": "eaa6224d325b41628495ea0ce5736ca3a0107fd1f1aaa2f02ab10ab135a8faf4",
+    "src/mechanisms.py": "b40faa25e9b42c8421f2fecb4f26cb36a6f4ba2ebc9ffb5dd418e00e5ac2ad68",
+    "src/metrics.py": "3b5ef31c0d69ed0a4f5f4df0a61bb18dbdcb3b1053ea0f3e998c1d900d5f3af6",
+    "src/outcome_diagnostics.py": "29b79c547fc2ecec3beaf80cb9b8e5e2c93e8e3cf2c94fa17e6ba0f94fbad955",
+    "src/pair_eval.py": "34548d3be6245bfdfe4bfcfb24cf328fc7a8ec9ce2a85f435ba3d760167d7303",
+    "src/quality_cost.py": "df7f33d06e3e221f6918a84090ecfcbbdf623320aeaaa527b53434c768f32c49",
+    "src/robust_payment.py": "03808ebcb2cf86261b0c831fb30bbd99adc5a3ad0016cdc89130ecdced3ef578",
+    "src/schemas.py": "97edf5a59da563cb8cea0bc625964abe7096ee983a1b3d93140971013e820a74",
+    "src/simulator.py": "c364f6c959e50229f49532fb065b8dfe95222ad0fef36559ddebd593bc0bf235",
+    "src/stats_utils.py": "7568b526a668665bf31e63d58853be5dae76d8757cd1f0743691b447f935b635",
+    "tests/test_adaptive_response.py": "bd082075aa43cdaccbc3b76ea1076e7fc522f94a11456a9d9d26a504fe27d542",
+    "tests/test_behavior.py": "ac75d3d513ca6b930cd9167850cb8ae4e7aaf6125024d49e1dae1952698f4cc6",
+    "tests/test_contracts.py": "ce2575a4e451be209f09f88eb31ee57723dc4bc5979ac48f46ae2643c08648be",
+    "tests/test_csopt.py": "9e0ca71e537d70807489ab5adcbcbfde7fa7be350449f796b22b691501675dd3",
+    "tests/test_e24_certificate.py": "46cb5b8ca3beb658296f4e75f9b30cdc3ffcd1a01cedd9ed2279eb4490f4b5e8",
+    "tests/test_e29_selection.py": "ca8d02c7d0d7d884947a0675ff4826e8987f23116bd06bdfb6476eee2b3fe509",
+    "tests/test_e30_episode_risk.py": "6a05ddb740d67edf9451085b62a2416eab8bb9d85e658e76888936d9685e87ca",
+    "tests/test_e8_robustness.py": "b3b310659c735c00e5f458f196744796256326722e750bab38fb0d3ea64a751e",
+    "tests/test_effort_solver.py": "6682748534828ee1ad04f17f311c8fe38b84702794a32f05e7c51eda3aed8231",
+    "tests/test_end_to_end.py": "6ea4c282ae172f4f03e748412b132d511b812290251c9c124e7cb8ea8e109c33",
+    "tests/test_matching.py": "8ee541da9eeb133d418efe26bc36c17dc57898e93493de9ed02d15ce2a64bb8d",
+    "tests/test_mechanisms.py": "3363ef59fdfccac094e23b8839f73489a8bf20bdd44e3e7f46e202d6ef42e589",
+    "tests/test_mobility.py": "f819991ed86e782c9f24d88faa034816391278f40fdeda9703c22a12686ef733",
+    "tests/test_public_baseline_audit_fields.py": "af1413401c6bb89ea1bf38eeb273191b8871448d2cffa974e54348f99fca295c",
+    "tests/test_public_dynamics.py": "86ab221efad8862153afca0917146a5eca46d27dc2855b2ff0c1d581616d9781",
+    "tests/test_qim_e.py": "dd95322898f01b137ab2eaa9767784ca22426f20da7743671fb0c706fc0a1944",
+    "tests/test_quac_f.py": "a1d5448394dfd7dcefbbf06a61a34b50868c896122b167a13da61d3b37afbb1a",
+    "tests/test_quality_cost.py": "b414f3f68855ef3e82eec8ffabc72c1adf7175e5fc2e80cc5565d5d46fef0a8c",
+    "tests/test_response_design_value.py": "b3795cd29318eab32cf6712f98a9df98dfa892159fdf93a9094a250db329c049",
+    "tests/test_round51_correctness.py": "2f642b50c90ebefe0ee07d5391fcfbbbf71ed7bcf18c62ed2c6df134b9885ac5",
+    "tests/test_round53_outcomes.py": "720c14b246b1af7b574c34f38f68f3852f3364d1e9d860e9be43249a0e147929",
+    "tests/test_sami.py": "50540ddca35c728f417477a3103d03132699b11f652424ae8aa0751f6978b8f4",
+    "tests/test_stage_gate.py": "bd683884b189580c05bdaca9d106a381969df036305ff57797579cf1dad5c59b",
+    "tests/test_trace_adapter.py": "b6dd66dce42c2d8d63247125bd3bfb888292ccdfe822bd97760159771d81d524",
+    "tests/test_vectorized.py": "1f24b22aac64000701ae96e031304a7f48c6001c9e0fdda0190fd14f874fc7f3"
+  },
+  "failure_policy": "preserve every completed/error cell and every negative outcome; do not tune or filter",
+  "historical_metrics_sha256": "9d0e421b2054628e2e7cc595407badd87f1d83798e864aaebeada4baf6fdb577",
+  "historical_source_available": false,
+  "interpretation": "new canonical-protocol evidence, not historical-program reproduction",
+  "jobs": [
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 1
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 1
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 2
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 2
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 3
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 3
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 4
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 4
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 5
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 5
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 6
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 6
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 7
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 7
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 8
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 8
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 9
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 9
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 10
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 10
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 11
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 11
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 12
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 12
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 13
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 13
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 14
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 14
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 15
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 15
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 16
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 16
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 17
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 17
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 18
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 18
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 19
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 19
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 20
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 20
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 21
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 21
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 22
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 22
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 23
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 23
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 24
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 24
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 25
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 25
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 26
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 26
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 27
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 27
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 28
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 28
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 29
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 29
+    },
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 30
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 30
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 1
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 1
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 2
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 2
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 3
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 3
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 4
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 4
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 5
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 5
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 6
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 6
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 7
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 7
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 8
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 8
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 9
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 9
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 10
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 10
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 11
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 11
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 12
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 12
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 13
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 13
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 14
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 14
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 15
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 15
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 16
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 16
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 17
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 17
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 18
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 18
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 19
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 19
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 20
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 20
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 21
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 21
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 22
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 22
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 23
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 23
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 24
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 24
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 25
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 25
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 26
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 26
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 27
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 27
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 28
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 28
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 29
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 29
+    },
+    {
+      "method": "MOI",
+      "scenario": "burst",
+      "seed": 30
+    },
+    {
+      "method": "PASI",
+      "scenario": "burst",
+      "seed": 30
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 1
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 1
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 2
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 2
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 3
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 3
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 4
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 4
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 5
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 5
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 6
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 6
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 7
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 7
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 8
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 8
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 9
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 9
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 10
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 10
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 11
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 11
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 12
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 12
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 13
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 13
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 14
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 14
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 15
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 15
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 16
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 16
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 17
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 17
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 18
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 18
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 19
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 19
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 20
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 20
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 21
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 21
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 22
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 22
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 23
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 23
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 24
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 24
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 25
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 25
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 26
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 26
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 27
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 27
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 28
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 28
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 29
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 29
+    },
+    {
+      "method": "MOI",
+      "scenario": "dynamic",
+      "seed": 30
+    },
+    {
+      "method": "PASI",
+      "scenario": "dynamic",
+      "seed": 30
+    }
+  ],
+  "manuscript_changed": false,
+  "matching_objective": "coverage_first_payment_second",
+  "matching_objective_injected": true,
+  "matching_policy": "lexicographically maximize qualified-service assignment cardinality, then minimize design-side decision cost",
+  "new_scenarios_or_seeds": false,
+  "optimization_cost_basis": "decision_contract_cost (design-side reservation)",
+  "qos_event": "execution_quality < q_min-tol OR total_delay > deadline+tol",
+  "qos_tolerance": 1e-09,
+  "references_changed": false,
+  "restricted_or_nonredistributable_input": false,
+  "round": 72,
+  "runner_sha256": "d6786fb012a236c674f9d6e60c2bc01ea8381469227b84caf6ae1711bc2b0b5c",
+  "scope": "canonical original Main-180 matrix under repaired coverage-first core",
+  "settlement_reporting_basis": "expected_contract_cost at executed response, reported separately",
+  "smoke_cells": [
+    {
+      "method": "MOI",
+      "scenario": "stationary",
+      "seed": 1
+    },
+    {
+      "method": "PASI",
+      "scenario": "stationary",
+      "seed": 1
+    }
+  ],
+  "source_archive": "C:\\Users\\huang\\Desktop\\8.14\\第十二轮\\04_实验附件\\Main-180_release_safe.zip",
+  "source_archive_sha256": "f0d7503ca479cfd6ccd1d2ed2becf6065319527d517765a87bc608098847fa26",
+  "target_tolerance": 1e-07,
+  "workers": 4
+}

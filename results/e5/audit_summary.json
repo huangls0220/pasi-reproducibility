@@ -1,0 +1,19 @@
+{
+  "cells": 180,
+  "pairs": 90,
+  "all_cell_consistency_checks_pass": true,
+  "all_paired_input_graph_config_checks_pass": true,
+  "negative_cells": 0,
+  "total_qos_violations": 0,
+  "total_ir_violations": 0,
+  "total_target_violations": 0,
+  "diagnostic_status_counts": {
+    "ok": 180
+  },
+  "observed_all_legal_efforts_at_one": true,
+  "interval_scope": "model-seed variability conditional on reused mobility corpus; not participant population or virgin holdout",
+  "references_changed": false,
+  "manuscript_changed": false,
+  "analysis_sha256": "748a3a48da0401fc992b8945d4d2bfc797577c2b2c53944c24c395cc20643d13",
+  "preregistration_sha256": "ca551055f376ddc4d3790d0492f4f9ab43d0abdf359b049070cd6d9fe7370379"
+}

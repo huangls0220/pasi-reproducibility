@@ -1,0 +1,10 @@
+{
+  "all_coverage_first": true,
+  "expected_runs": 180,
+  "formal_runs": 180,
+  "ir_violations": 0,
+  "reference_changes": false,
+  "restricted_inputs_published": false,
+  "same_provider_nonpositive_total": 0,
+  "target_violations": 0
+}

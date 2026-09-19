@@ -1,0 +1,34 @@
+{
+  "source": "C:\\Users\\huang\\Documents\\Codex\\2026-08-31\\new-chat\\work\\round67-e7-confirmation\\analyze_results.py",
+  "source_sha256": "d05894e788a2c9e69956a532ef16a0506fa1e8e95b470820b325202c77e28e79",
+  "derived_sha256": "15f2c08acfd71ca8c602bf280435778cf30016c396eaf0c21d80b45293641141",
+  "edits": [
+    [
+      "ROOT=Path(__file__).resolve().parent",
+      "ROOT=Path(__file__).resolve().parent/'merged'"
+    ],
+    [
+      "source=ROOT.parent/'round64-e5-confirmation/check_matching.py'",
+      "source=ROOT.parent.parent/'round64-e5-confirmation/check_matching.py'"
+    ],
+    [
+      "folder=ROOT/'restricted'/name",
+      "folder=Path(load(ROOT/'log_sources.json')[name])"
+    ],
+    [
+      "rt=np.clip(c.e7_design_state-cell['magnitude']*c.e7_active,0.,1.)",
+      "sign=1. if cell['direction']=='runtime_higher' else -1.\n    rt=np.clip(c.e7_design_state+sign*cell['magnitude']*c.e7_active,0.,1.)"
+    ],
+    [
+      "'other_original_cells_unresolved':60",
+      "'other_original_cells_unresolved':0"
+    ],
+    [
+      "expected matrix literal1200 (3 occurrences)",
+      "2880"
+    ]
+  ],
+  "metric_rules_changed": false,
+  "bootstrap_rules_changed": false,
+  "runtime_policy": "generalize audited downward sign to original zero/up/down direction"
+}

@@ -1,0 +1,10 @@
+{
+  "formal_runs": 40,
+  "expected_runs": 40,
+  "all_coverage_first": true,
+  "ir_violations": 0,
+  "target_violations": 0,
+  "normal_reset_raw_tapes_equal": true,
+  "observable_to_platform": true,
+  "reference_changes": false
+}

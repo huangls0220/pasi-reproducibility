@@ -1,0 +1,4 @@
+# Synthetic dataset defaults (Section 8.2)
+dataset:
+  name: synthetic
+  pattern: stationary   # stationary | burst | dynamic

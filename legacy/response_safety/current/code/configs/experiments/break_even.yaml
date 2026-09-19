@@ -1,0 +1,32 @@
+# Experiment C: Cultivation investment & break-even (Section 12.3)
+# DeltaC(t) = cum_payment_PRIME(t) - cum_payment_MOI(t); break-even = first
+# crossing below 0 that stays non-positive (stability window in analysis).
+# Variations: provider lifetime, rho_B (behavioural fraction), xi, delta.
+
+simulation:
+  T: 1000
+  log_level: "selected"
+  save_logs: [slot, provider]
+
+sweep:
+  methods: [PRIME, MOI]
+  seeds: 20
+  variations:
+    - name: base
+      overrides: {}
+    - name: lifetime_300
+      overrides: {providers: {lifetime_mean: 300}}
+    - name: lifetime_150
+      overrides: {providers: {lifetime_mean: 150}}
+    - name: rhoB_0.4
+      overrides: {providers: {behavioral_fraction: 0.4}}
+    - name: rhoB_1.0
+      overrides: {providers: {behavioral_fraction: 1.0}}
+    - name: xi_low
+      overrides: {providers: {xi: [0.03, 0.06]}}
+    - name: xi_high
+      overrides: {providers: {xi: [0.10, 0.16]}}
+    - name: delta_low
+      overrides: {providers: {delta: [0.005, 0.02]}}
+    - name: delta_high
+      overrides: {providers: {delta: [0.04, 0.08]}}

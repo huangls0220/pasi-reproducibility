@@ -1,0 +1,70 @@
+# Experiment H: Mechanism-parameter sensitivity (Section 12.8)
+# One-factor-at-a-time around the calibrated defaults
+# (Theta_M=0.75, Theta_C=0.55, s_M=0.80, s_C=0.65, K=10,
+#  delta_p_max=0.05, eta_H=5, budget_ratio=0.70, D_bar=10).
+
+simulation:
+  T: 500
+  log_level: "selected"
+  save_logs: [slot]
+
+sweep:
+  methods: [PRIME]
+  seeds: 20
+  variations:
+    - name: base
+      overrides: {}
+    - name: ThetaM_0.60
+      overrides: {path_state: {Theta_M: 0.60}}
+    - name: ThetaM_0.70
+      overrides: {path_state: {Theta_M: 0.70}}
+    - name: ThetaM_0.80
+      overrides: {path_state: {Theta_M: 0.80}}
+    - name: ThetaM_0.85
+      overrides: {path_state: {Theta_M: 0.85}}
+    - name: ThetaC_0.45
+      overrides: {path_state: {Theta_C: 0.45}}
+    - name: ThetaC_0.65
+      overrides: {path_state: {Theta_C: 0.65}}
+    - name: sM_0.70
+      overrides: {path_state: {s_M: 0.70}}
+    - name: sM_0.90
+      overrides: {path_state: {s_M: 0.90}}
+    - name: sC_0.55
+      overrides: {path_state: {s_C: 0.55}}
+    - name: sC_0.75
+      overrides: {path_state: {s_C: 0.75}}
+    - name: K_5
+      overrides: {path_state: {K: 5}}
+    - name: K_20
+      overrides: {path_state: {K: 20}}
+    - name: dpmax_0.02
+      overrides: {path_state: {delta_p_max: 0.02}}
+    - name: dpmax_0.10
+      overrides: {path_state: {delta_p_max: 0.10}}
+    - name: dpmax_0.20
+      overrides: {path_state: {delta_p_max: 0.20}}
+    - name: etaH_0
+      overrides: {prime: {eta_H: 0.0}}
+    - name: etaH_2
+      overrides: {prime: {eta_H: 2.0}}
+    - name: etaH_10
+      overrides: {prime: {eta_H: 10.0}}
+    - name: etaH_20
+      overrides: {prime: {eta_H: 20.0}}
+    - name: Dbar_5
+      overrides: {contract: {D_bar: 5.0}}
+    - name: Dbar_15
+      overrides: {contract: {D_bar: 15.0}}
+    - name: budget_0.5
+      methods: [PRIME, MOI]
+      overrides: {matching: {budget_ratio: 0.5}}
+    - name: budget_0.6
+      methods: [PRIME, MOI]
+      overrides: {matching: {budget_ratio: 0.6}}
+    - name: budget_0.8
+      methods: [PRIME, MOI]
+      overrides: {matching: {budget_ratio: 0.8}}
+    - name: budget_0.9
+      methods: [PRIME, MOI]
+      overrides: {matching: {budget_ratio: 0.9}}

@@ -1,0 +1,8 @@
+{
+  "formal_runs": 80,
+  "expected_runs": 80,
+  "all_coverage_first": true,
+  "ir_violations": 0,
+  "target_violations": 0,
+  "reference_changes": false
+}

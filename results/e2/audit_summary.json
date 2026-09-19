@@ -1,0 +1,9 @@
+{
+  "formal_runs": 450,
+  "expected_runs": 450,
+  "all_coverage_first": true,
+  "ir_violations": 0,
+  "target_violations": 0,
+  "raw_tape_shared_within_scenario_seed": true,
+  "reference_changes": false
+}

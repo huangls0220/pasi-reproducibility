@@ -1,0 +1,11 @@
+{
+  "completed": 1680,
+  "expected": 1680,
+  "reused": 120,
+  "new_completed": 1560,
+  "errors": [],
+  "finished": "2026-09-15T08:26:01.601584+00:00",
+  "inputs_and_cores_unchanged": true,
+  "references_changed": false,
+  "manuscript_changed": false
+}

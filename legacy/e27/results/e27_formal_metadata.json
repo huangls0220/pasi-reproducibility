@@ -1,0 +1,86 @@
+{
+  "experiment": "E27 source-native public payment baselines",
+  "sources": {
+    "QIM-E": "Wang et al., IEEE ICDCS 2016, doi:10.1109/ICDCS.2016.30",
+    "CSOPT": "Chatzopoulos et al., IEEE MASS 2018, arXiv:1808.04056"
+  },
+  "implementation": "independent implementations of published algorithms; not author code",
+  "public_method_changes": "none to selection or payment rules",
+  "published_special_case": {
+    "QIM-E": "single-minded quality vectors with maximum capped QoC",
+    "CSOPT": "r=1 and single-minded interest sets"
+  },
+  "shared_protocol": [
+    "GeoLife episode",
+    "task and candidate identity",
+    "QoS-prequalified candidate set",
+    "fixed one-provider-per-task coverage",
+    "modeled economic state",
+    "seed"
+  ],
+  "information_difference": "QIM-E and CSOPT observe direct effective reserve bids; PASI reconstructs its contract from design/runtime state",
+  "contract_difference": "QIM-E and CSOPT use critical/externality payments; PASI uses its nonnegative-base probabilistic contract",
+  "comparison_scope": "tasks with at least two single-minded QoS-legal candidates",
+  "trace_fields": [
+    "provider identity",
+    "slot",
+    "latitude",
+    "longitude"
+  ],
+  "model_generated_fields": [
+    "tasks",
+    "cost parameters",
+    "capacity",
+    "quality response",
+    "reserve bids",
+    "contracts"
+  ],
+  "payment_status": "mechanism-computed outcome, not an observed field",
+  "raw_trace_redistributed": false,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "workloads": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "runs": 90,
+  "elapsed_seconds": 91.22810173034668,
+  "source_hashes": {
+    "runner": "25f9c2d51460ebf895d4e08833935611ae0addaae84e8e9634af0e93031d8679",
+    "simulator": "26f538860de287509f82b0d88ce6aeb82c584f71c257495bc4fc22f18ab88b60",
+    "pair_eval": "f69e249d1175b0c78423c58f9a149a633c4e7f8f6133ef47bcb30b81c9daf8e7",
+    "qim_e": "c332fb85f1f477e8c03eccdbdf166f02aff10906d99f28e09e171cb5edb9b4cd",
+    "csopt": "02df225bbdd9ce4da74bdafce99639e2b321608c6c3a930624819469ccceac0c"
+  }
+}

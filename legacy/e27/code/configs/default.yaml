@@ -1,0 +1,109 @@
+# PRIME Experiment Default Configuration
+# All parameters are preliminary and should be calibrated before formal experiments.
+
+# ── Simulation ──
+simulation:
+  T: 1000                    # Total slots
+  seed: 42
+  gamma: 0.99                # Discount factor (not used in P1, reserved)
+  log_level: "selected"      # full | selected | sample | none
+  checkpoint_interval: 50    # Save state every N slots
+  save_pair_log: true        # For correctness experiments, keep true
+
+# ── Providers ──
+providers:
+  N_mean: 100                # Mean number of providers per slot
+  behavioral_fraction: 0.70  # rho_B: fraction of behavioural providers
+                             # (non-behavioural: omega=0, zeta=1)
+  lifetime_mean: null        # Mean provider lifetime in slots (null = persistent)
+  max_processing_rate: [5.0, 20.0]   # F_i,max range
+  alpha: [0.05, 0.20]        # Linear cost coefficient
+  beta: [0.02, 0.10]         # Quadratic cost coefficient
+  zeta: [0.65, 0.95]         # Prelec probability weighting
+  omega: [0.05, 0.25]        # Intrinsic motivation weight (must be calibrated)
+  xi: [0.05, 0.12]           # Learning rate
+  delta: [0.01, 0.05]        # Decay rate
+  outside_option: 0.01       # U_out base (will be scaled)
+  initial_H: 0.1             # Initial path state
+  initial_stage: "cultivation"
+
+# ── Tasks ──
+tasks:
+  M_mean: 80                 # Mean number of tasks per slot
+  cpu_cycles: [0.1, 1.0]     # L_j^t range (normalized)
+  input_size: [0.1, 2.0]
+  output_size: [0.05, 1.0]
+  deadline_factor: [1.2, 2.5]  # rho = deadline / raw_duration
+  min_quality: [0.65, 0.85]    # q_min
+  q_bar: [0.90, 1.00]          # Upper bound quality
+  kappa: [1.0, 5.0]            # Quality sensitivity
+  value_base: [1.0, 5.0]       # V_j^t base value
+
+# ── Contract ──
+contract:
+  p_min: 0.05
+  p_max: 0.80
+  D_bar: 10.0                  # Bonus cap
+  reinforcement_margin: 0.05   # Additional margin for s_rein
+
+# ── Path State ──
+path_state:
+  Theta_M: 0.75               # Maintenance entry threshold
+  Theta_C: 0.55               # Cultivation fallback threshold
+  s_M: 0.80                   # Quality threshold for maintenance
+  s_C: 0.65                   # Quality threshold for cultivation
+  K: 10                       # Window size for quality monitoring
+  delta_p_max: 0.05           # Max probability decrease per slot in maintenance
+
+# ── Matching ──
+matching:
+  budget_ratio: 0.70          # rho_B: budget as fraction of total task value
+  initial_lambda_B: 0.1
+  max_iter: 100
+  step_scale: 0.1
+  budget_tol: 1.0e-4
+  stagnation_limit: 5
+  milp_threshold: 15          # Max size for MILP exact solution
+
+# ── PRIME-specific ──
+prime:
+  eta_H: 5.0                  # Future reinforcement value weight
+  use_path_dependence: true
+  use_probability_weighting: true
+
+# ── Baseline parameters (preliminary; tuned values go to configs/tuned/) ──
+baselines:
+  fixed_reward:
+    base_payment: 0.05
+    p: 0.4
+    D: 3.0
+  dynamic_pricing:
+    p: 0.4                    # risk-neutral pricing D = Lambda / p
+  reputation_aware:
+    p: 0.4
+    initial_reputation: 0.5
+    ewma_alpha: 0.2
+    weight_base: 0.5          # matching weight multiplier = w0 + w1 * r
+    weight_scale: 1.0
+    explore_interactions: 5   # new-provider exploration window
+    explore_multiplier: 1.0
+  linear_decay:
+    p_start: 0.8
+    p_end: 0.1
+    decay_interactions: 30    # assigned interactions to reach p_end
+    D: 2.0
+  prime_fixed:
+    cultivation_interactions: 15  # PRIME-Fixed: switch after N assignments
+
+# ── Estimation error (Experiment F; 0 = perfect knowledge) ──
+estimation_error:
+  level: 0.0                  # relative error level (0.1 = ±10%)
+  params: all                 # all | omega | zeta | xi | delta | [list]
+  mode: random                # random | over | under
+  robust: false               # true = PRIME-R conservative design
+
+# ── Experiments ──
+experiments:
+  seeds_main: 30
+  seeds_sensitivity: 20
+  seeds_smoke: 3

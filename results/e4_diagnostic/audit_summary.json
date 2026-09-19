@@ -1,0 +1,10 @@
+{
+  "logical_cells": 24,
+  "expected_cells": 24,
+  "repeats_per_cell": 1,
+  "not_a_full360_replacement": true,
+  "all_coverage_first": true,
+  "ir_violations": 0,
+  "target_violations": 0,
+  "reference_changes": false
+}

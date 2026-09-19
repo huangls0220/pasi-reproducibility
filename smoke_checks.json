@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "field": "matching_objective_declared",
+      "method": "MOI",
+      "pass": true
+    },
+    {
+      "field": "observed_matching_objective_types",
+      "method": "MOI",
+      "pass": true
+    },
+    {
+      "field": "coverage_first_matcher_calls",
+      "method": "MOI",
+      "pass": true
+    },
+    {
+      "field": "coverage_first_solver_counts",
+      "method": "MOI",
+      "pass": true
+    },
+    {
+      "field": "decision_cost_basis",
+      "method": "MOI",
+      "pass": true
+    },
+    {
+      "field": "diagnostic_status",
+      "method": "MOI",
+      "pass": true
+    },
+    {
+      "field": "matching_objective_declared",
+      "method": "PASI",
+      "pass": true
+    },
+    {
+      "field": "observed_matching_objective_types",
+      "method": "PASI",
+      "pass": true
+    },
+    {
+      "field": "coverage_first_matcher_calls",
+      "method": "PASI",
+      "pass": true
+    },
+    {
+      "field": "coverage_first_solver_counts",
+      "method": "PASI",
+      "pass": true
+    },
+    {
+      "field": "decision_cost_basis",
+      "method": "PASI",
+      "pass": true
+    },
+    {
+      "field": "diagnostic_status",
+      "method": "PASI",
+      "pass": true
+    },
+    {
+      "field": "event_tape_hash",
+      "method": "paired",
+      "pass": true
+    },
+    {
+      "field": "input_fingerprints",
+      "method": "paired",
+      "pass": true
+    },
+    {
+      "field": "tasks",
+      "method": "paired",
+      "pass": true
+    }
+  ],
+  "formal_cells_completed": 2,
+  "passed": true
+}

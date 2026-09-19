@@ -1,0 +1,49 @@
+{
+  "all_current_pasi_decision_fee_savings_positive": true,
+  "all_current_pasi_payment_savings_positive": true,
+  "all_current_pasi_pps_savings_positive": true,
+  "all_event_tapes_match_historical": true,
+  "all_matching_objective_types_observed_coverage_first": true,
+  "all_matching_objectives_declared_coverage_first": true,
+  "all_paired_current_inputs_equal": true,
+  "changed_payment_cells_at_1e_10": 180,
+  "changed_service_count_cells": 134,
+  "coverage_first_matcher_calls": 180000,
+  "coverage_first_solver_counts": {
+    "full_cardinality_hungarian_exact": 19872,
+    "k_cardinality_hungarian_exact": 160128
+  },
+  "exact_payment_cells_at_1e_10": 0,
+  "exact_service_count_cells": 46,
+  "hashes": {
+    "analysis": "0e5b48e06dd4286c4e9f69b5f0b588a9082ac37a7c293d74d5f061a20e3376a2",
+    "historical_run_metrics.csv": "9d0e421b2054628e2e7cc595407badd87f1d83798e864aaebeada4baf6fdb577",
+    "runner": "d6786fb012a236c674f9d6e60c2bc01ea8381469227b84caf6ae1711bc2b0b5c",
+    "seed_results.csv": "c254a68db940048e7aa56b7d3356a3bdd0b957d89b92759c48b1e743502cbed6"
+  },
+  "historical_event_tapes_matched": 180,
+  "interpretation": {
+    "canonical_protocol_confirmation": true,
+    "execution_settlement_metric": "payment",
+    "historical_program_equivalence": false,
+    "primary_optimization_metric": "design_reserve",
+    "reason": "The canonical protocol explicitly uses coverage-first matching and design-side decision cost; execution settlement is reported separately."
+  },
+  "ir_violations": 0,
+  "legal_design_settlement_cost_diff": 54919751,
+  "legal_effort_below_a_min": 0,
+  "manuscript_changed": false,
+  "matrix_complete": true,
+  "max_abs_payment_delta": 2241.463459432889,
+  "max_abs_service_count_delta": 16,
+  "max_legal_design_settlement_cost_diff": 0.0307795129633202,
+  "negative_outcome_runs": 0,
+  "qos_violations": 0,
+  "references_changed": false,
+  "reserve_over_budget_slots": 0,
+  "runtime_errors": 0,
+  "settlement_over_budget_slots": 0,
+  "settlement_over_reserve_slots": 89088,
+  "target_violations": 0,
+  "zeta_above_one": 0
+}

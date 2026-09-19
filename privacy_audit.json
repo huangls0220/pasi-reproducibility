@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "allow_list_build": true,
+  "forbidden_path_hits": [],
+  "geolife_raw_included": false,
+  "geolife_cache_included": false,
+  "geolife_episodes_included": false,
+  "provider_task_slot_logs_included": false
+}
