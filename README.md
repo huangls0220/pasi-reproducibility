@@ -1,7 +1,8 @@
 # PASI reproducibility materials
 
-This repository accompanies the manuscript **Path-Aware Stateful Incentives for
-Long-Term Mobile Crowdsensing Services**. The current synthetic experiments use
+This repository accompanies the manuscript **PASI: QoS-Safe Incentive
+Contracting under Runtime-Design Path-State Mismatch in Mobile
+Crowdsensing**. The current synthetic experiments use
 one formal protocol: the repaired implementation, lexicographic
 coverage-first matching, minimization of the design-side decision fee at fixed
 coverage, and separate reporting of execution settlement.
@@ -35,6 +36,10 @@ information, QoS, contract-domain, and objective assumptions.
 
 Reference environment: Windows x64 and Python 3.14.4. The resolved Windows
 dependency lock is `core_source/requirements-win-py314-lock.txt`.
+`core_source/scripts` includes historical utilities needed by the frozen test
+suite; their presence does not certify retired experiments as current evidence.
+All 241 source tests passed in a clean copy of this public artifact on the
+reference machine; see `test_validation.json` for the exact command and scope.
 
 ```powershell
 python -m venv .venv
@@ -56,7 +61,7 @@ a portable entry point. `run_e1_current180.py` regenerates the same 180
 scenario--method--seed cells under the same canonical core and additionally
 records phase diagnostics. The frozen outputs and hashes remain in
 `results/main180`; `main_e1_equivalence.json` reports a maximum monetary
-difference of (1.46\times10^{-11}) and zero assignment difference across
+difference of 1.46e-11 and zero assignment difference across
 the 90 paired cells.
 
 `run_e4_seed001_diagnostic.py` is an information-value diagnostic for an old
@@ -76,9 +81,11 @@ the frozen position-cache SHA-256 is
 The response-safety reconstruction wrapper is namespaced under
 `legacy/response_safety`. It rejects generated data inside the repository and
 checks the legally reconstructed episode hashes before replay. E5, E7, and E16
-retain their exact runners and preregistrations under `evidence_runners`, but
-local absolute paths must be replaced with the reader's legally reconstructed
-input paths. Their seed-level aggregate outcomes are supplied under `results`.
+retain their exact runner sources and preregistrations under
+`evidence_runners`, but these historical runners are not stand-alone portable
+commands: E7's continuation depends on earlier local snapshots, and all
+trace-driven runners require legally reconstructed inputs and local path
+adaptation. Their seed-level aggregate outcomes are supplied under `results`.
 
 ## Integrity and privacy
 

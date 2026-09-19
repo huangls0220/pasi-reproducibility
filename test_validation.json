@@ -1,0 +1,8 @@
+{
+  "scope": "fresh copy of public core_source with src, scripts, configs, and tests",
+  "command": "python -B -m pytest tests -q -p no:cacheprovider --basetemp <writable-workspace-temporary-directory>",
+  "tests_passed": 241,
+  "tests_failed": 0,
+  "interpretation": "source-unit and local integration checks; no claim of independent field replication or complete trace-driven outcome replay",
+  "references_changed": false
+}

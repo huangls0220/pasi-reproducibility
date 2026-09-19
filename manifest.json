@@ -127,6 +127,381 @@
       "sha256": "e7adffab4245b5b9c4060a429433aeea6cf2d0563bac2b81756e09ad29cc482d"
     },
     {
+      "path": "core_source/scripts/aggregate_results.py",
+      "bytes": 5203,
+      "sha256": "0a0b06421eb2da9d4bf8aa236687389f1a197ed17cab23c03e8e31499bf38c25"
+    },
+    {
+      "path": "core_source/scripts/audit_e27_public_payment_baselines.py",
+      "bytes": 4153,
+      "sha256": "0e2e8b5de447c76785b7289616ff7be5abe766decead16ba14652ef4e5d96736"
+    },
+    {
+      "path": "core_source/scripts/audit_e28_evidence_origin.py",
+      "bytes": 7398,
+      "sha256": "fac721c5ee78ac50c364abeb177a46511c29cf910bda291fd84c564a38c31975"
+    },
+    {
+      "path": "core_source/scripts/audit_e29_calibration_selection.py",
+      "bytes": 6154,
+      "sha256": "0ca227d4a38847d934d10eaa850f293c39d38578fcd86acd4b946d1e60e0f7d7"
+    },
+    {
+      "path": "core_source/scripts/audit_e5_geolife.py",
+      "bytes": 5509,
+      "sha256": "5153a7b2f015e43848636b5beaa21a32c6209db737c4a0b2b0a0bba8c7b0db29"
+    },
+    {
+      "path": "core_source/scripts/audit_e8.py",
+      "bytes": 3481,
+      "sha256": "87c97c0a00c41bed5b1714d6b3212f09de25e098a5193993e58e3b7b95380fc0"
+    },
+    {
+      "path": "core_source/scripts/audit_stage2a_no_manual_replay_formula.py",
+      "bytes": 3621,
+      "sha256": "ba951d8bae62916e7ac9c1d8a262f90f97049113f2ceef484408ac4d3c03aa6a"
+    },
+    {
+      "path": "core_source/scripts/build_manifest.py",
+      "bytes": 6504,
+      "sha256": "e9097d65b0e6e1fa2f64c436f268270f0aab1848ae0c401dee2baa70b41ca134"
+    },
+    {
+      "path": "core_source/scripts/calibrate_parameters.py",
+      "bytes": 6646,
+      "sha256": "39613e2b6e887f5a821640a80a24c9b5f0ebb7be159fcd47f2bbe128958f5c95"
+    },
+    {
+      "path": "core_source/scripts/fast_a1_4b_finalize.py",
+      "bytes": 8370,
+      "sha256": "8e8d290d0d4d74f54a8e14bb36a1654b6ea023bd918b97a919deb0bc5e27d7e4"
+    },
+    {
+      "path": "core_source/scripts/finalize_a1_4a.py",
+      "bytes": 8785,
+      "sha256": "0b3feff2222cd27fd87b7cd6c3d4f63a5e8d76f812972a308d5bc6f780f1bc3e"
+    },
+    {
+      "path": "core_source/scripts/finish_a1_5.py",
+      "bytes": 5548,
+      "sha256": "af311900a41f1183d7c2fe3b6ecc89cd43bff790c96d29f9ea57311e122ba4f4"
+    },
+    {
+      "path": "core_source/scripts/generate_stage2bvr_docx.py",
+      "bytes": 12005,
+      "sha256": "215a4f8cd57b8391fe89cfa48eaa11f16a1d56482e18025cde6b2381bfb858d5"
+    },
+    {
+      "path": "core_source/scripts/make_e29_safety_coverage_frontier.py",
+      "bytes": 7453,
+      "sha256": "a1925f79d061c01cf1e22e32265443b06c85a24be8f8b611a76110232ec17136"
+    },
+    {
+      "path": "core_source/scripts/make_e8_figures.py",
+      "bytes": 2394,
+      "sha256": "daa2d9d81d3fe922eee7dacc135a0fbd7e9b2ad55fb1e26b68ffae0382a461ea"
+    },
+    {
+      "path": "core_source/scripts/make_figures.py",
+      "bytes": 32493,
+      "sha256": "bedbc72bda68538e633593dbb66fac5fa858faf57fefccef9d059103b903aefd"
+    },
+    {
+      "path": "core_source/scripts/preprocess_alibaba.py",
+      "bytes": 1993,
+      "sha256": "64757633d529d70edb4db4f1a7a0a9c0ecac1daa7f2670be4b8e3f8d4fb2b6a4"
+    },
+    {
+      "path": "core_source/scripts/preprocess_geolife.py",
+      "bytes": 1226,
+      "sha256": "91e6f3cd93c9caa1d79ff8bfaa03e70075ba1106d143efd54c5a03781117d143"
+    },
+    {
+      "path": "core_source/scripts/preprocess_google.py",
+      "bytes": 1651,
+      "sha256": "9c623ac6d3364fb9d06f83d9ca50c7c03fe1ab48d9a95f327a428df8826028e2"
+    },
+    {
+      "path": "core_source/scripts/run_a1_3_complete.py",
+      "bytes": 27675,
+      "sha256": "146bd1a3af997978ae17969dcc81706414fc243bf794a52d7c4c20a5c93447cc"
+    },
+    {
+      "path": "core_source/scripts/run_a1_4_scale.py",
+      "bytes": 3979,
+      "sha256": "5019a902cc2395c2e7c1b0269072811e526f95d4a6c8ed028779b660b1eb2756"
+    },
+    {
+      "path": "core_source/scripts/run_a1_4a_four_world.py",
+      "bytes": 15427,
+      "sha256": "7be4d3486de9b8bf6b777a8c09b19beb84aa3a90e62e9dc27759423d48f4d931"
+    },
+    {
+      "path": "core_source/scripts/run_a1_4b_complete.py",
+      "bytes": 33599,
+      "sha256": "8ca73183dc54a8d07ba5b09d37c93889f10780ec241a32d32539049045c00f12"
+    },
+    {
+      "path": "core_source/scripts/run_a1_5.py",
+      "bytes": 37361,
+      "sha256": "c56ad391d29a5082fead43c7bb02d6ab90da7ea41fabebff60a29b804d0acf8c"
+    },
+    {
+      "path": "core_source/scripts/run_a1_6_stage1.py",
+      "bytes": 23501,
+      "sha256": "0e2bf2963933ab6dd701f42401efa5f70f74d30cefe70d1829138dde464f14d6"
+    },
+    {
+      "path": "core_source/scripts/run_a1_6_stage1b.py",
+      "bytes": 22403,
+      "sha256": "050dbe377696622338fad87e9be2fd65588e42d33f6bf01899b09491df441e0b"
+    },
+    {
+      "path": "core_source/scripts/run_a1_6_stage1c.py",
+      "bytes": 22761,
+      "sha256": "16eb29fdefaeae90d88a3e248d05fa2e62050aca6dcf659bf8fc8b8170cfeb45"
+    },
+    {
+      "path": "core_source/scripts/run_a1_7_stage2a.py",
+      "bytes": 39188,
+      "sha256": "0ca4f5e32c539ccd53cf3b380ee4f4a61156030ab3a4f2d3215abc1fbd7c14d0"
+    },
+    {
+      "path": "core_source/scripts/run_a1_7_stage2ar.py",
+      "bytes": 38431,
+      "sha256": "a3d88c09f54d72f35f0344c3a2e0baf89458f485aee5656ac0e7ce3b0fb88764"
+    },
+    {
+      "path": "core_source/scripts/run_a1_8_stage2bvr.py",
+      "bytes": 26354,
+      "sha256": "8ce7b05d5de6a1a27e8f561cfb021ef1330aaff813f3e826630e29226358a408"
+    },
+    {
+      "path": "core_source/scripts/run_batch.py",
+      "bytes": 6548,
+      "sha256": "bf08c4c3f936927d3731e6802b08782533df5bd544523982c17c67bffe04886c"
+    },
+    {
+      "path": "core_source/scripts/run_cumulative_bridge.py",
+      "bytes": 6938,
+      "sha256": "9e958656298f38b68ed3ee41b0230b8a383c33bc270a83366f6119a4771448e6"
+    },
+    {
+      "path": "core_source/scripts/run_e11_pasi_u.py",
+      "bytes": 7309,
+      "sha256": "6af96617f063bf1a504756e84103282ee4c549a2ce46a87d755dd0f85d3b8997"
+    },
+    {
+      "path": "core_source/scripts/run_e13_response_reserve.py",
+      "bytes": 11225,
+      "sha256": "0b37cf587cb3b1d51ee15b965169c6e6ad4f8f9cf9ed8d4fb952f8b1b6e56d75"
+    },
+    {
+      "path": "core_source/scripts/run_e15_directional_response.py",
+      "bytes": 18354,
+      "sha256": "dadc3d6629d147d34031b86940cdc62f0fc949163365576527ce7191ccbe473c"
+    },
+    {
+      "path": "core_source/scripts/run_e16_quac_baseline.py",
+      "bytes": 7975,
+      "sha256": "359ba576ab587f14bee9fc57a6448047a2b6947c76db3c76b04bf5d541cebecb"
+    },
+    {
+      "path": "core_source/scripts/run_e17_response_drift.py",
+      "bytes": 10849,
+      "sha256": "71df1764b4d5217944b50f8b03258dc094bcc3704a6086535120b872fcdb6f85"
+    },
+    {
+      "path": "core_source/scripts/run_e18_tiles_economic_anchor.py",
+      "bytes": 4284,
+      "sha256": "89614b3854bae4989ead2a4bed82ef706648957c33e6fdaa7f7671194f778aa2"
+    },
+    {
+      "path": "core_source/scripts/run_e19_probability_weighting.py",
+      "bytes": 8229,
+      "sha256": "ae06a0ec46bc55f3a3ce9c712548e8e75e9080c4eb6c700497e71da11818c545"
+    },
+    {
+      "path": "core_source/scripts/run_e20_envelope_tradeoff.py",
+      "bytes": 13085,
+      "sha256": "b97bd8890ffd09bd283782418a9ebaf63721108b9b20387dc3f4cc14679ee15e"
+    },
+    {
+      "path": "core_source/scripts/run_e21_public_and_adaptive.py",
+      "bytes": 10883,
+      "sha256": "f07706d40b878674a805f1f7229faffd6747f8b0eb8560c99eb8c6e754463a3c"
+    },
+    {
+      "path": "core_source/scripts/run_e22_adaptive_geolife.py",
+      "bytes": 11995,
+      "sha256": "54142b9eb855b24a1c79202f2411ae393ee5d58ad144d50441a070609c50b375"
+    },
+    {
+      "path": "core_source/scripts/run_e23_guardrail_frontier.py",
+      "bytes": 10583,
+      "sha256": "509eab3b9e9546fc563529c9005aa1217c9034c746f31ea35fe2dc8ca0a033e8"
+    },
+    {
+      "path": "core_source/scripts/run_e24_robust_optimality_certificate.py",
+      "bytes": 12530,
+      "sha256": "bd01fd93ef59180a82c749afd05c45653da6fd84bf38a2adee4ca45ce16d2d21"
+    },
+    {
+      "path": "core_source/scripts/run_e25_public_dynamics.py",
+      "bytes": 10943,
+      "sha256": "61632c6c33c7df56e0b00298f0bd05c1ef94b61a1cf3b8ec7b5943b63c1d9cc1"
+    },
+    {
+      "path": "core_source/scripts/run_e26_public_breadth.py",
+      "bytes": 14150,
+      "sha256": "9292ee2435d48d5a228f2387dc971876173a2f971e6dc251dfd6f90c0c9cd2c2"
+    },
+    {
+      "path": "core_source/scripts/run_e27_public_payment_baselines.py",
+      "bytes": 17279,
+      "sha256": "25f9c2d51460ebf895d4e08833935611ae0addaae84e8e9634af0e93031d8679"
+    },
+    {
+      "path": "core_source/scripts/run_e29_calibration_selection.py",
+      "bytes": 14958,
+      "sha256": "f4498ca5c5e3ff158cb8d901bb794ad3e0da37f778b8025468affdebb78a11dc"
+    },
+    {
+      "path": "core_source/scripts/run_e30_episode_risk.py",
+      "bytes": 13388,
+      "sha256": "67c4dc368284c3b02253aa96a248583570d28d1cdb46eeeefe928fd57bd07906"
+    },
+    {
+      "path": "core_source/scripts/run_e5_geolife.py",
+      "bytes": 7707,
+      "sha256": "0ada036bdb9a5f8aee54427e85e8f3ab0467a71aa8f4230844408bfe13c56e10"
+    },
+    {
+      "path": "core_source/scripts/run_e8_robustness.py",
+      "bytes": 10130,
+      "sha256": "27a2496a9d3c0fd80a69d71bb2053591a0fd878e1c2140b4498dd1b4296f6fc5"
+    },
+    {
+      "path": "core_source/scripts/run_experiment.py",
+      "bytes": 4210,
+      "sha256": "606af412e6a7a8825734c0782317375bdd780c740e8baf7ab5c9e0ed82666d34"
+    },
+    {
+      "path": "core_source/scripts/run_route_a_a1_2.py",
+      "bytes": 31668,
+      "sha256": "09847296d70120595f1625054c4d3a7daabcfe62311c861da1b6c8dcc76ec21d"
+    },
+    {
+      "path": "core_source/scripts/run_route_a_a1_3.py",
+      "bytes": 35538,
+      "sha256": "ff3aeff169244d8bea1bc69545ce8b9a909b92c55277ac468faca97dc3671ead"
+    },
+    {
+      "path": "core_source/scripts/run_route_a_experiments.py",
+      "bytes": 34302,
+      "sha256": "9018e8037d09eff1affa75b604fdf0286a18e32e8c1b6a359ebd62e1ce88ba5f"
+    },
+    {
+      "path": "core_source/scripts/run_sfprime_b1_2.py",
+      "bytes": 81871,
+      "sha256": "4ae7916cc05ca547d94304e2eec7cbd6590616012159b8d5ddfe74308e0826e3"
+    },
+    {
+      "path": "core_source/scripts/run_stage2_correct.py",
+      "bytes": 7536,
+      "sha256": "a8f41b44385348c14f057ee56b1e379afc5b44f49acfcfb6e1b6700e8af02f9c"
+    },
+    {
+      "path": "core_source/scripts/run_sweep.py",
+      "bytes": 9009,
+      "sha256": "e1cac3865b7b061f58e1cff0f6313d0be50f1deb022534cd78ad49453947d050"
+    },
+    {
+      "path": "core_source/scripts/statistical_tests.py",
+      "bytes": 4032,
+      "sha256": "dd5d10d8189e89d5e9eb46c1224f31ea85d564f879e1c98f8e41725833c52c2b"
+    },
+    {
+      "path": "core_source/scripts/summarize_e13_paired.py",
+      "bytes": 4163,
+      "sha256": "fecbfa48be6e3385f56baa7af079738fa63701b3a85e08c97abbb3f979e0e94a"
+    },
+    {
+      "path": "core_source/scripts/tune_baselines.py",
+      "bytes": 9798,
+      "sha256": "8b3ce48575c33967c4453e6413d3b535a334a3821e15aef6d23aa3e46adc25c5"
+    },
+    {
+      "path": "core_source/scripts/validate_coverage_first_matching.py",
+      "bytes": 2572,
+      "sha256": "1af0ad602f39fa98c2f0b40eef4d4eea77a2ae23dd5378d4790e68e48607a8f8"
+    },
+    {
+      "path": "core_source/scripts/validate_dataset.py",
+      "bytes": 2350,
+      "sha256": "6c790f607bd09c8f6e527d64b1fe5121de40c0473e96dae2e662b7e046e249fc"
+    },
+    {
+      "path": "core_source/scripts/verify_a1_6_stage1.py",
+      "bytes": 4114,
+      "sha256": "2519cbafaf97eb265ebb4ba715264d3530f799c153499e2c276c226b2570a8f1"
+    },
+    {
+      "path": "core_source/scripts/verify_a1_6_stage1b.py",
+      "bytes": 4067,
+      "sha256": "f5ccf3a9905c02d5294571868a4880fc5aeffa91fd571b9c0412c0c39e32dd0e"
+    },
+    {
+      "path": "core_source/scripts/verify_a1_6_stage1c.py",
+      "bytes": 3195,
+      "sha256": "2b4fbba3feb2d6bfa3b5b94b2bf0eaf14fa7724fbb0d71e579d6984577cfd830"
+    },
+    {
+      "path": "core_source/scripts/verify_e15_directional_response.py",
+      "bytes": 3428,
+      "sha256": "14c576e73b5af3d63b0e6785575341953ddd921b23bbeeecbdec9c29a2da92bf"
+    },
+    {
+      "path": "core_source/scripts/verify_e16_quac_baseline.py",
+      "bytes": 3103,
+      "sha256": "f371858bef0ce62d45b4113ca4aa62682ad58eb5167371c10bc27fdde3a8b850"
+    },
+    {
+      "path": "core_source/scripts/verify_e17_response_drift.py",
+      "bytes": 1148,
+      "sha256": "1d2ce1b18e4cbaa2f92d9039f75aa0610c8c05304b1679496c63957742ab237f"
+    },
+    {
+      "path": "core_source/scripts/verify_e18_tiles_economic_anchor.py",
+      "bytes": 999,
+      "sha256": "06fe5f6c240cd4af1e14295135a1551b0375b5e0be4ff0abd1ebadda79776b01"
+    },
+    {
+      "path": "core_source/scripts/verify_e19_probability_weighting.py",
+      "bytes": 2368,
+      "sha256": "4c174c2b2ce7ddff096c27f0a2d215292f805e251d8b007e054ba4c53ca5c15e"
+    },
+    {
+      "path": "core_source/scripts/verify_geolife_reconstruction.py",
+      "bytes": 4214,
+      "sha256": "54af0bbae86d0d60eec1d9ed62888260e73ed7a44ceb2dab09ae78eacd5285c1"
+    },
+    {
+      "path": "core_source/scripts/verify_route_a_a1_7_stage2a.py",
+      "bytes": 7326,
+      "sha256": "dd0451f88977fd23327b8bcad49c412a62c58c1537ee59faf378870214d0bd54"
+    },
+    {
+      "path": "core_source/scripts/verify_route_a_a1_7_stage2ar.py",
+      "bytes": 7340,
+      "sha256": "494a0646a1233b64239ca37181ae37b3fd1f3087a5d499960c607afbc5880940"
+    },
+    {
+      "path": "core_source/scripts/verify_route_a_a1_8_stage2bvr.py",
+      "bytes": 8933,
+      "sha256": "c274039885bd03d21bebf2d362d646405124667127aa536aad306fb2fd7d1e15"
+    },
+    {
       "path": "core_source/src/__init__.py",
       "bytes": 35,
       "sha256": "faf13f51792dd24e7e5bae09bede42a1537cc9a2f19e2cbc25fa27aecbc0fa64"
@@ -2123,8 +2498,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4987,
-      "sha256": "b034d632b25216ba79b9f647d7847f7cbb82bf8e23327bf11e5ed1c06343f72b"
+      "bytes": 5441,
+      "sha256": "c4cad8185073f02b5e611541a5f2100058cc4b2f22dde0bd9741f0c10d7b860d"
     },
     {
       "path": "reanalyze_e1_current180.py",
@@ -2365,6 +2740,11 @@
       "path": "smoke_checks.json",
       "bytes": 1616,
       "sha256": "08caa518d10c2e3bb1b35d109374ce41e1843a459378321194544faf00093cbf"
+    },
+    {
+      "path": "test_validation.json",
+      "bytes": 427,
+      "sha256": "7af05bfcc9c99040367a1c9b734d8dfb84ff2daeeeb6ef4b22e8074807c34258"
     }
   ]
 }
