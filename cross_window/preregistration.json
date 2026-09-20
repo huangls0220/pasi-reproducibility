@@ -1,0 +1,47 @@
+{
+  "study": "R73 prespecified temporal-window mobility robustness",
+  "frozen_before_outcomes": true,
+  "source": "GeoLife GPS Trajectories 1.3, acquired by the researcher under the dataset owner's terms",
+  "status": "trace-driven modeled economics; not observed bidding or payment response",
+  "sampling_unit": "seven-day, non-overlapping mobility window",
+  "nested_randomness": "three model seeds per window; not independent mobility episodes or participant samples",
+  "selection": "One seven-day bin in each of six consecutive qualifying calendar months, selected by counts of provider trajectory filenames only, before position filtering or mechanism runs; bins anchored to 2008-01-01 UTC and constrained to >=25 distinct filename users. No outcome-based replacement.",
+  "windows_utc": [
+    ["2008-10-21", "2008-10-28"],
+    ["2008-11-04", "2008-11-11"],
+    ["2008-12-02", "2008-12-09"],
+    ["2009-01-13", "2009-01-20"],
+    ["2009-03-03", "2009-03-10"],
+    ["2009-04-07", "2009-04-14"]
+  ],
+  "filename_user_counts": [29, 33, 33, 29, 36, 29],
+  "position_filter": {
+    "slot_minutes": 10,
+    "bbox": [39.4, 41.1, 115.4, 117.6],
+    "max_speed_kmh": 180.0
+  },
+  "episode_builder": {
+    "workload": "medium",
+    "service_radius_km": 3.0,
+    "model_seeds": [2, 11, 23],
+    "failure_policy": "Keep and report any window with no usable post-filter data; do not choose a replacement. Do not silently discard model seeds."
+  },
+  "mechanism": {
+    "source": "legacy/response_safety/current/code: repaired R56 core",
+    "method": "PASI",
+    "matching_objective": "coverage_first_payment_second",
+    "decision_cost_basis": "design-side fee; settlement separately reported",
+    "profiles": ["frozen_point", "fixed_envelope"],
+    "fixed_envelope": [0.7, 1.3],
+    "scenarios": ["stable", "down_step", "up_step"],
+    "contract_D_bar": 50,
+    "matching_budget_ratio": 3.5,
+    "config_changes_from_R56": "Only episode path and n_providers for the observed position cache; N_mean is unused by the trace loader and simulator, but is updated for config integrity. No response bound, algorithm, matching objective, or budget change."
+  },
+  "jobs_if_all_episodes_build": 108,
+  "primary_estimand": "For each window and scenario, average over its three model seeds, then show all six window-level fixed-envelope minus frozen-point differences in assignment coverage and qualified coverage, with QoS violation counts/rates for both profiles.",
+  "secondary_outcomes": ["execution payment per service", "design reserve", "IR violations", "target misses", "settlement exceeding reserve", "budget exceedances", "run failures"],
+  "inference": "Descriptive across six selected windows. No post-hoc parameter choice, no 0.5% risk certificate, no claim of independent participant populations or real economic responses.",
+  "privacy": "Raw GeoLife, positions, frozen episodes, coordinates and provider/task/slot logs remain outside this public package; only non-identifying aggregated outcomes may be published.",
+  "references_changed": false
+}
