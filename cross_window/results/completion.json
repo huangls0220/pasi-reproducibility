@@ -1,0 +1,22 @@
+{
+  "expected_cells": 108,
+  "completed_cells": 108,
+  "failed_cells": 0,
+  "failures": [],
+  "windows": 6,
+  "model_seeds_per_window": 3,
+  "statistical_unit": "temporal mobility window; nested model seeds",
+  "risk_certification": false,
+  "references_changed": false,
+  "preregistration_sha256": "8ccef4cfda2df7e47fea28354936c0ff4b0e9b499e125c9419b0d4fbacdc52c3",
+  "runner_sha256": "9ffc7036eec33993c9496d2e8f2c0b7630d27a1a77f46a91a90576dc0ac1a94f",
+  "source_sha256": {
+    "src/simulator.py": "c364f6c959e50229f49532fb065b8dfe95222ad0fef36559ddebd593bc0bf235",
+    "src/pair_eval.py": "34548d3be6245bfdfe4bfcfb24cf328fc7a8ec9ce2a85f435ba3d760167d7303",
+    "src/matching.py": "9894ca6f33073fb99514000b9ce908aad1e5d73ef8cc3266589abe4b80db8e5d",
+    "src/datasets/mobility.py": "5b53c8b05245a6e4ff2d754060c1ae5576a0c4c2fe272cc7f9719794058a698e",
+    "src/datasets/trace_loader.py": "16821c0217076489294f8433f63719f0736738aeab1ee8a0dc80412784173fa6",
+    "scripts/run_e20_envelope_tradeoff.py": "b97bd8890ffd09bd283782418a9ebaf63721108b9b20387dc3f4cc14679ee15e",
+    "R56/configurations.json": "4e229d560510f14c3949dc52df3124ef5887b02c96c29c10450322ddbe981246"
+  }
+}

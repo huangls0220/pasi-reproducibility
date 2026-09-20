@@ -51,6 +51,11 @@ def replay(args):
     configs=read(ROOT/'current/configurations.json');rows=[];comparisons=[]
     with (ROOT/'current/results/seed_results.csv').open(encoding='utf-8-sig',newline='') as f:
         refs={(int(r['seed']),r['scenario'],r['profile']):r for r in csv.DictReader(f)}
+    absent=[(seed,scenario,profile) for seed in args.seeds
+            for scenario in ('stable','down_step','up_step')
+            for profile in ('frozen_point','fixed_envelope')
+            if (seed,scenario,profile) not in refs]
+    if absent:raise ValueError(f'No published comparison rows for {absent[:6]}; use formal seeds 2--30')
     for seed in args.seeds:
         folder=args.episodes/f'seed_{seed:03d}'
         for scenario in ('stable','down_step','up_step'):
@@ -82,7 +87,7 @@ def replay(args):
                 with (out/'outcomes.csv').open('w',encoding='utf-8',newline='') as f:
                     w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
                 print(json.dumps(row),flush=True)
-    report={'cells':len(rows),'comparisons':comparisons,'passed':all(r['pass'] for r in comparisons),
+    report={'cells':len(rows),'comparisons':comparisons,'passed':bool(comparisons) and all(r['pass'] for r in comparisons),
         'not_reproduced':['historical timing','original shadow audit','MILP certificate instrumentation'],
         'new_population_sample':False,'wrapper_sha256':sha(Path(__file__))}
     (out/'comparison.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
@@ -98,9 +103,13 @@ def main():
         if command=='replay':a.add_argument('--out',type=Path,required=True)
     args=p.parse_args()
     if args.action=='verify-package':
-        hashes=read(ROOT/'manifest.json');bad=[n for n,h in hashes.items() if not (ROOT/n).is_file() or sha(ROOT/n)!=h]
+        package=ROOT.parent.parent
+        items=read(package/'manifest.json')['files']
+        bad=[item['path'] for item in items if not (package/item['path']).is_file()
+             or sha(package/item['path'])!=item['sha256']
+             or (package/item['path']).stat().st_size!=item['bytes']]
         if bad:raise ValueError(bad)
-        print(json.dumps({'files_checked':len(hashes),'passed':True,'simulator_runs':0}))
+        print(json.dumps({'files_checked':len(items),'passed':True,'simulator_runs':0}))
     elif args.action=='check-inputs':
         checks=check(args.episodes,args.seeds);print(json.dumps({'checks':len(checks),'passed':True,'simulator_runs':0}))
     elif args.action=='rebuild':rebuild(args)
