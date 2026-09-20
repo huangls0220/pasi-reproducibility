@@ -27,6 +27,7 @@ responses remain model-generated.
 | E16 contract comparison | `results/e16` | Coverage-first comparison; restricted inputs omitted |
 | Response-safety study | `legacy/response_safety` | Separate frozen repaired implementation and replay wrapper |
 | E27 public mechanisms | `legacy/e27` | Historical implementation retained separately; conditional equivalence, not a current-core rerun |
+| R73 temporal-window response safety | `cross_window` | Six distinct GeoLife weeks, three modeled seeds/week; descriptive safety--coverage robustness, not risk certification |
 
 E27 is not evidence of universal payment superiority. QIM-E and CSOPT have
 lower payment in all 90 tested restricted-subset comparisons, under different
@@ -80,12 +81,36 @@ the frozen position-cache SHA-256 is
 
 The response-safety reconstruction wrapper is namespaced under
 `legacy/response_safety`. It rejects generated data inside the repository and
-checks the legally reconstructed episode hashes before replay. E5, E7, and E16
-retain their exact runner sources and preregistrations under
-`evidence_runners`, but these historical runners are not stand-alone portable
-commands: E7's continuation depends on earlier local snapshots, and all
-trace-driven runners require legally reconstructed inputs and local path
-adaptation. Their seed-level aggregate outcomes are supplied under `results`.
+checks the legally reconstructed episode hashes before replay. Its published
+reference covers formal seeds 2--30; seed 1 has no row in that reference and
+cannot count as a comparison. E5, E7, and E16 retain their historical audit
+runners and preregistrations under `evidence_runners`. Those archival runners
+refer to local snapshots. New portable entry points below replay the published
+scientific outcome columns using the archived repaired core and frozen input
+hashes; they do not reproduce private candidate logs or historical runtimes.
+
+From a clean clone, after installing the Windows Python 3.14 environment,
+use GeoLife data obtained under the owner's terms. The first command rebuilds
+all 90 low/medium/high episodes and verifies all 360 file hashes against the
+published E5 preregistration. Keep `RESTRICTED` outside the clone. For a short
+comparison, use seed 1; pass `--seeds 1 2 ... 30` for the complete E5/E16
+matrix one workload at a time. E7 accepts one published cell ID per call.
+
+```powershell
+python -B rebuild_geolife_all.py --raw "C:\path\to\Geolife Trajectories 1.3\Data" --out "C:\restricted\pasi-episodes"
+python -B replay_e5_e16.py --study e5 --episodes "C:\restricted\pasi-episodes\episodes" --out "C:\restricted\e5-medium-seed1.json" --workload medium --seeds 1
+python -B replay_e5_e16.py --study e16 --episodes "C:\restricted\pasi-episodes\episodes" --out "C:\restricted\e16-medium-seed1.json" --workload medium --seeds 1
+python -B replay_e7.py --episodes "C:\restricted\pasi-episodes\episodes" --out "C:\restricted\e7-C002-seed1.json" --cell E7C002 --seeds 1
+```
+
+R73's separate cross-week design, commands, aggregate seed outcomes, and
+negative findings are in `cross_window/README.md`. It does not reuse the
+same physical week 30 times as if those were independent mobility episodes.
+`replay_validation.json` records a clean local reconstruction of all 90
+GeoLife episodes (360 file hashes matched) and 272 selected scientific
+outcome comparisons across E5, E7, E16, and R56. This is a verified
+reproduction entry point, **not** a claim that all historical simulation
+cells were rerun in the clean validation.
 
 ## Integrity and privacy
 
