@@ -51,10 +51,9 @@ The top-level simulator status may be `failed` when an observed QoS violation oc
 
 ## Public outputs
 
-The release includes the frozen selection, cell summaries, source hashes, and
-completion record.  The two seed-level non-sensitive CSV tables are stored in
-the five numbered `results/r75_seed_results.tar.gz.part-*` chunks so that each
-repository update remains small.  Reconstruct them on a POSIX shell with
-`cat results/r75_seed_results.tar.gz.part-* > r75_seed_results.tar.gz` and
-`tar -xzf r75_seed_results.tar.gz`.  The release excludes the GeoLife archive,
-caches, episodes, coordinates, and provider/task/slot logs.
+The public repository includes the frozen selection, cell summaries, source
+hashes, completion record, and the exact runner that regenerates the
+per-execution tables.  The complete non-sensitive per-execution CSV files are
+retained in the round archive rather than duplicated in the repository.  The
+release excludes the GeoLife archive, caches, episodes, coordinates, and
+provider/task/slot logs.
