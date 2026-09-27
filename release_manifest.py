@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 MANIFEST = ROOT / "manifest.json"
-FORBIDDEN_COMPONENTS = {"raw", "restricted", "cache", "caches", "episodes", "cells", "participant_logs", "provider_logs", "task_logs", "slot_logs", ".git", ".venv", "__pycache__"}
+FORBIDDEN_COMPONENTS = {"raw", "restricted", "cache", "caches", "episodes", "cells", "participant_logs", "provider_logs", "task_logs", "slot_logs", ".git", ".venv", ".pytest_cache", "__pycache__"}
 FORBIDDEN_EXTENSIONS = {".parquet", ".plt", ".zip", ".pyc", ".pkl", ".pickle"}
 
 
