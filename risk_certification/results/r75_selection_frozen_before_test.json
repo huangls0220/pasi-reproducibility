@@ -1,0 +1,18 @@
+{
+  "selected_g": 1.0,
+  "statistical_pass": true,
+  "selection_basis": "simultaneous_episode_KL",
+  "alpha": 0.005,
+  "delta": 0.05,
+  "worst_episode_risk_upper_by_g": {
+    "0.0": 0.012743438871685997,
+    "0.25": 0.010796743470084915,
+    "0.5": 0.008662553861455148,
+    "0.75": 0.006651054932318713,
+    "1.0": 0.00499681610909339
+  },
+  "test_outcomes_used_for_selection": false,
+  "calibration_results_sha256": "eee8ea1883aaa863656e9e4e9945ef83a521fd589c8288ac7be99143864e7811",
+  "calibration_summary_sha256": "3e77dd6963239a868812ecaf70378d0bce9d631d74b8f014fd0196ade4f6b84b",
+  "written_unix_time": 1790383556.156701
+}
