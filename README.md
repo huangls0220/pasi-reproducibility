@@ -12,6 +12,15 @@ observations of real bidding, cost, capacity, effort, or payment response.
 GeoLife contributes mobility and availability only. The economic variables and
 responses remain model-generated.
 
+## Stable version and citation status
+
+Audit the manuscript against the immutable commit recorded in
+[`ARTIFACT_VERSIONS.md`](ARTIFACT_VERSIONS.md), not only against the moving
+`main` branch.  [`RELEASE_READINESS.md`](RELEASE_READINESS.md) lists the
+remaining author-controlled steps for a licensed archival release and DOI.
+No DOI, reuse license, or incomplete author list is asserted before those
+steps are completed.
+
 ## Evidence map
 
 | Evidence | Location | Interpretation |
@@ -28,6 +37,7 @@ responses remain model-generated.
 | Response-safety study | `legacy/response_safety` | Separate frozen repaired implementation and replay wrapper |
 | E27 public mechanisms | `legacy/e27` | Historical implementation retained separately; conditional equivalence, not a current-core rerun |
 | R73 temporal-window response safety | `cross_window` | Six distinct GeoLife weeks, three modeled seeds/week; descriptive safety--coverage robustness, not risk certification |
+| R75 episode-risk certification | `risk_certification` | Independent calibration, frozen selection, and held-out test on the fixed six-week empirical mixture; not real-participant or population mobility certification |
 
 E27 is not evidence of universal payment superiority. QIM-E and CSOPT have
 lower payment in all 90 tested restricted-subset comparisons, under different
@@ -46,7 +56,9 @@ reference machine; see `test_validation.json` for the exact command and scope.
 python -m venv .venv
 .venv/Scripts/python -m pip install -r core_source/requirements-win-py314-lock.txt
 .venv/Scripts/python -m pip check
-.venv/Scripts/python -B -m pytest core_source/tests -q -p no:cacheprovider --basetemp .test-tmp
+Push-Location core_source
+../.venv/Scripts/python -B -m pytest tests -q -p no:cacheprovider --basetemp ../.test-tmp
+Pop-Location
 
 # Run in a disposable clone because these commands regenerate result folders.
 .venv/Scripts/python run_e1_current180.py --workers 4
@@ -122,4 +134,4 @@ evidence for it.
 
 No software license has been granted in this version. Repository visibility
 permits inspection but does not itself grant permission to reuse the code.
-No DOI is claimed.
+No DOI is claimed. See `RELEASE_READINESS.md` for the exact release gate.
