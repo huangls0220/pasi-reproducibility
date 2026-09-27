@@ -1,0 +1,10 @@
+{
+  "selection_sha256": "99ced4cc887a9a7159c0452f06e112acbd483a2b396481b7e1da9962cbee5d05",
+  "test_seeds": [
+    760001,
+    761000,
+    1000
+  ],
+  "constructed_after_selection": true,
+  "test_outcomes_used_for_selection": false
+}
