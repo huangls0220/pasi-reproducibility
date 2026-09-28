@@ -4,5 +4,13 @@
   "tests_passed": 241,
   "tests_failed": 0,
   "interpretation": "source-unit and local integration checks; no claim of independent field replication or complete trace-driven outcome replay",
-  "references_changed": false
+  "references_changed": false,
+  "round75_revalidation": {
+    "date": "2026-09-27",
+    "working_directory": "core_source",
+    "command": "python -B -m pytest tests -q -p no:cacheprovider --basetemp <writable-workspace-temporary-directory>",
+    "tests_passed": 241,
+    "tests_failed": 0,
+    "public_r75_runner_help_passed": true
+  }
 }
