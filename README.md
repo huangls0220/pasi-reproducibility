@@ -38,6 +38,7 @@ steps are completed.
 | E27 public mechanisms | `legacy/e27` | Historical implementation retained separately; conditional equivalence, not a current-core rerun |
 | R73 temporal-window response safety | `cross_window` | Six distinct GeoLife weeks, three modeled seeds/week; descriptive safety--coverage robustness, not risk certification |
 | R75 episode-risk certification | `risk_certification` | Independent calibration, frozen selection, and held-out test on the fixed six-week empirical mixture; not real-participant or population mobility certification |
+| R76 nontrivial-policy certification | `risk_certification/r76` | Prespecified `g=0.75`, fresh six-scenario calibration certificate, and independent frozen-policy coverage evaluation |
 
 E27 is not evidence of universal payment superiority. QIM-E and CSOPT have
 lower payment in all 90 tested restricted-subset comparisons, under different
@@ -118,6 +119,13 @@ python -B replay_e7.py --episodes "C:\restricted\pasi-episodes\episodes" --out "
 R73's separate cross-week design, commands, aggregate seed outcomes, and
 negative findings are in `cross_window/README.md`. It does not reuse the
 same physical week 30 times as if those were independent mobility episodes.
+
+R75's calibration study establishes the conservative boundary: only `g=1`
+qualifies among five candidates. R76 uses R75 calibration evidence only to
+prespecify one nontrivial candidate, then uses fresh calibration and held-out
+seeds. Its protocol, exact frozen runner, public path-adapted runner,
+seed-level results, negative QoS outcomes, and reconstruction commands are in
+`risk_certification/r76/README.md`.
 `replay_validation.json` records a clean local reconstruction of all 90
 GeoLife episodes (360 file hashes matched) and 272 selected scientific
 outcome comparisons across E5, E7, E16, and R56. This is a verified

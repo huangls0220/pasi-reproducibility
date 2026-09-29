@@ -1,0 +1,17 @@
+{
+  "selected_g": 0.75,
+  "statistical_pass": true,
+  "selection_basis": "simultaneous_episode_KL",
+  "alpha": 0.005,
+  "delta": 0.05,
+  "worst_episode_risk_upper_by_g": {
+    "0.75": 0.004332882523085446
+  },
+  "test_outcomes_used_for_selection": false,
+  "prespecified_candidate": 0.75,
+  "candidate_selected_from": "R75 calibration evidence only",
+  "r75_test_outcomes_used_for_candidate_design": false,
+  "calibration_results_sha256": "c7eeb22582d62db7906c9874958243dfb296e8513c7f8b748ef50f9d9aff23a5",
+  "calibration_summary_sha256": "9b4cd7e4043f90b664bb2918384519a88f44d0cbf83c1486db4f0e19f9aee5ba",
+  "written_unix_time": 1790618033.2903388
+}

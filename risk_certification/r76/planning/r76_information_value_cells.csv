@@ -1,0 +1,7 @@
+scenario,r75_calibration_mean_episode_loss,minimum_n_at_observed_mean
+stable,0.0,956
+down_step,0.0004496483900216919,1377
+up_step,0.0,956
+down_ramp,0.0,956
+alternating,0.0,956
+hidden_blocks,0.00038379122643746017,1315

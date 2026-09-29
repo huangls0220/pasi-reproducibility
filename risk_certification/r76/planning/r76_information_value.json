@@ -1,0 +1,21 @@
+{
+  "source": "R75 calibration only",
+  "r75_test_outcomes_read": false,
+  "candidate_g": 0.75,
+  "alpha": 0.005,
+  "delta": 0.05,
+  "scenario_tail": 0.008333333333333333,
+  "chosen_n_per_scenario": 1600,
+  "chosen_n_planned_pass_probability": 1.0,
+  "mean_assignment_coverage_gain_pp_over_g1": 4.820575473632664,
+  "scenario_assignment_coverage_gain_pp": {
+    "alternating": 0.0,
+    "down_ramp": 2.9626819237765,
+    "down_step": 3.9348083643896747,
+    "hidden_blocks": 2.207052652500252,
+    "stable": 8.305341071309602,
+    "up_step": 11.513568829819953
+  },
+  "decision": "GO: freeze one nontrivial candidate and use fresh R76 calibration/test seeds",
+  "interpretation": "Planning evidence only; not a risk certificate and not a test-set-selected policy"
+}

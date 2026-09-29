@@ -1,0 +1,30 @@
+{
+  "calibration_runs": 9600,
+  "test_runs": 12000,
+  "selected_g": 0.75,
+  "statistical_pass": true,
+  "selection_sha256": "f3a2b69dc584fc88969e051e07965512e123ccd02f47e0b8dbe00ea062bbc893",
+  "test_outcomes_used_for_selection": false,
+  "all_executions_completed": true,
+  "all_inside_global_envelope": true,
+  "claim_scope": "fixed six-week empirical GeoLife mixture plus modeled economic and response generator",
+  "real_participant_economic_evidence": false,
+  "restricted_data_redistributed": false,
+  "references_changed": false,
+  "identity": {
+    "runner_sha256": "0a4985194e475fb33ae1e97551cd189ce9b662e83c1386dd1597d39da2fac63f",
+    "protocol_sha256": "761631f6f7790906327114912493da407e29ffd2b107a52bb0044d86c0cf2fcf",
+    "preregistration_sha256": "a4873b174e56008f1c00f9e3095ae75e28569490ed5f0fede581f7c5506b916c",
+    "core_sha256": {
+      "src/simulator.py": "c364f6c959e50229f49532fb065b8dfe95222ad0fef36559ddebd593bc0bf235",
+      "src/pair_eval.py": "34548d3be6245bfdfe4bfcfb24cf328fc7a8ec9ce2a85f435ba3d760167d7303",
+      "src/matching.py": "9894ca6f33073fb99514000b9ce908aad1e5d73ef8cc3266589abe4b80db8e5d",
+      "src/datasets/mobility.py": "5b53c8b05245a6e4ff2d754060c1ae5576a0c4c2fe272cc7f9719794058a698e",
+      "src/datasets/trace_loader.py": "16821c0217076489294f8433f63719f0736738aeab1ee8a0dc80412784173fa6",
+      "scripts/run_e20_envelope_tradeoff.py": "b97bd8890ffd09bd283782418a9ebaf63721108b9b20387dc3f4cc14679ee15e",
+      "scripts/run_e22_adaptive_geolife.py": "54142b9eb855b24a1c79202f2411ae393ee5d58ad144d50441a070609c50b375",
+      "configurations.json": "4e229d560510f14c3949dc52df3124ef5887b02c96c29c10450322ddbe981246"
+    },
+    "r73_input_manifest_sha256": "56775ab9e97c3a8de7d08e23ae0c64053a12797b7b00b15dc42258446a820bb4"
+  }
+}
